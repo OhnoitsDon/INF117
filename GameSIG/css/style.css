@@ -234,3 +234,23 @@ footer{
     margin-bottom:5px;
   }
 }
+
+/* Content */
+#content{
+  min-height:700px;
+  box-shadow: 0 0 8px 8px black inset;
+  background-size: cover;
+  text-align:center;
+  background-color:#cc00cc;
+  color:#ffffff;
+}
+
+#content h1{
+  font-size:55px;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+#content p{
+  font-size:20px;
+}
