@@ -12,74 +12,82 @@
   <body>
     <header>
       <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Acme</span> Web Design</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="current"><a href="services.html">Services</a></li>
-          </ul>
-        </nav>
+        <center>
+          <div>
+            <img src='./img/logo.png'>
+          </div>
+        </center>
+      </div>
+      <div class='social_media'>
+        <img src='./img/facebook_icon.png'>
+        <img src='./img/twitter_icon.png'>
+        <img src='./img/instagram_icon.png'>
+      </div>
+
+      <br></br>
+
+      <div class="container">
+        <center>
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li class="current"><a href="competition.html">COMPETITION</a></li>
+              <li><a href="registration.html">REGISTRATION / TICKETS</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </center>
       </div>
     </header>
 
-    <section id="newsletter">
+    <header id="subheader">
       <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
+        <center>
+          <nav>
+            <ul>
+              <li class="current"><a>Rules and Regulation</a></li>
+              <li><a href="registration.html">Judges</a></li>
+              <li><a href="gallery.html">Sponsors</a></li>
+              <li><a href="about.html">Event History</a></li>
+            </ul>
+          </nav>
+        </center>
       </div>
-    </section>
+    </header>
 
-    <section id="main">
+    <div class="content">
       <div class="container">
-        <article id="main-col">
-          <h1 class="page-title">Services</h1>
-          <ul id="services">
-            <li>
-              <h3>Website Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
-						  <p>Pricing: $1,000 - $3,000</p>
-            </li>
-            <li>
-              <h3>Website Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
-						  <p>Pricing: $250 per month</p>
-            </li>
-            <li>
-              <h3>Website Hosting</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
-						  <p>Pricing: $25 per month</p>
-            </li>
-          </ul>
-        </article>
+        <center>
+          <h1>Rules and Regulations</h1>
+        </center>
+        <br>
+        <p style="font-size: 18pt">A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. <p>
 
-        <aside id="sidebar">
-          <div class="dark">
-            <h3>Get A Quote</h3>
-            <form class="quote">
-  						<div>
-  							<label>Name</label><br>
-  							<input type="text" placeholder="Name">
-  						</div>
-  						<div>
-  							<label>Email</label><br>
-  							<input type="email" placeholder="Emial Address">
-  						</div>
-  						<div>
-  							<label>Message</label><br>
-  							<textarea placeholder="Message"></textarea>
-  						</div>
-  						<button class="button_1" type="submit">Send</button>
-					</form>
-          </div>
-        </aside>
+        <p style="font-size: 18pt">The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. </p>
+
+        <p style="font-size: 18pt">How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.
+        </p>
+
       </div>
-    </section>
+    </div>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var subheader = document.getElementById('subheader');
+      var sticky = subheader.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          subheader.classList.add("sticky");
+        } else {
+          subheader.classList.remove("sticky");
+        }
+      }
+    </script>
 
     <footer>
       <p>Acme Web Deisgn, Copyright &copy; 2017</p>
