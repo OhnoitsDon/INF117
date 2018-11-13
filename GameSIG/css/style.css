@@ -142,7 +142,7 @@ header a:hover{
 .content {
   margin:auto;
   overflow:hidden;
-  padding: 40px;
+  padding: 40px 50px 40px 50px;
   background-color: white;
 }
 
