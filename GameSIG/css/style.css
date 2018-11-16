@@ -58,6 +58,15 @@ ul{
   color:black;
 }
 
+.enroll_button:hover {background-color: rgb(84, 59, 141)}
+
+.enroll_button:active {
+  color:white;
+  background-color: rgb(120, 64, 250);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .dark{
   padding:15px;
   background:#35424a;
