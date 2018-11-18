@@ -34,11 +34,6 @@ p {
   padding: 5px;
 }
 
-ul{
-  margin:0;
-  padding:0;
-}
-
 /* .button_1{
   height:38px;
   background:#FFDE00;
@@ -84,6 +79,11 @@ header{
   padding-top:30px;
   min-height:50px;
   /*border-bottom:white 3px solid;*/
+}
+
+header ul{
+  margin:0;
+  padding:0;
 }
 
 header a{
