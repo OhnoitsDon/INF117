@@ -8,6 +8,7 @@
   	<meta name="Denenbees" content="Brad Traversy">
     <title>IEEE GameSIG | Competition</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
   </head>
   <body>
 
@@ -21,9 +22,9 @@
         </center>
       </div>
       <div class='social_media'>
-        <img src='./img/facebook_icon.png'>
-        <img src='./img/twitter_icon.png'>
-        <img src='./img/instagram_icon.png'>
+        <img src='./img/social_media/facebook_icon.png'>
+        <img src='./img/social_media/twitter_icon.png'>
+        <img src='./img/social_media/instagram_icon.png'>
       </div>
 
       <br></br>
@@ -50,11 +51,11 @@
       <div class="container">
         <center>
           <nav>
-            <ul>
-              <li class="current"><a href="#rules_and_regulations">Rules and Regulation</a></li>
-              <li><a href="#judges">Judges</a></li>
-              <li><a href="#sponsors">Sponsors</a></li>
-              <li><a href="#event_history">Event History</a></li>
+            <ul id="inner_subheader">
+              <li><img src='./img/subheader_icons/rules_regs.png'><a class="current" href="#rules_and_regulations">Rules and Regulation</a></li>
+              <li><img src='./img/subheader_icons/judge.png'><a href="#judges">Judges</a></li>
+              <li><img src='./img/subheader_icons/handshake.png'><a href="#sponsors">Sponsors</a></li>
+              <li><img src='./img/subheader_icons/event.png'><a href="#event_history">Event History</a></li>
             </ul>
           </nav>
         </center>
@@ -301,21 +302,8 @@
         </div>
     </div>
 
-    <!-- Fixed Subheader when scrolling down -->
-    <script>
-      window.onscroll = function() {myFunction()};
-
-      var subheader = document.getElementById('subheader');
-      var sticky = subheader.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          subheader.classList.add("sticky");
-        } else {
-          subheader.classList.remove("sticky");
-        }
-      }
-    </script>
+    <!-- JavaScript -->
+    <script src="./js/competition.js"></script>
 
     <footer>
       <p>Acme Web Deisgn, Copyright &copy; 2017</p>
