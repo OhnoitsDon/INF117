@@ -8,6 +8,7 @@
   	<meta name="Denenbees" content="Brad Traversy">
     <title>IEEE GameSIG | Competition</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
   </head>
   <body>
 
@@ -50,8 +51,8 @@
       <div class="container">
         <center>
           <nav>
-            <ul>
-              <li class="current"><a href="#rules_and_regulations">Rules and Regulation</a></li>
+            <ul id="inner_subheader">
+              <li><a class="current" href="#rules_and_regulations">Rules and Regulation</a></li>
               <li><a href="#judges">Judges</a></li>
               <li><a href="#sponsors">Sponsors</a></li>
               <li><a href="#event_history">Event History</a></li>
@@ -301,21 +302,8 @@
         </div>
     </div>
 
-    <!-- Fixed Subheader when scrolling down -->
-    <script>
-      window.onscroll = function() {myFunction()};
-
-      var subheader = document.getElementById('subheader');
-      var sticky = subheader.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          subheader.classList.add("sticky");
-        } else {
-          subheader.classList.remove("sticky");
-        }
-      }
-    </script>
+    <!-- JavaScript -->
+    <script src="./js/competition.js"></script>
 
     <footer>
       <p>Acme Web Deisgn, Copyright &copy; 2017</p>
