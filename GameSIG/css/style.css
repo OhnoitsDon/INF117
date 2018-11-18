@@ -157,9 +157,18 @@ header a:hover{
   color:#000000;
 }
 
+#subheader nav {
+  margin-top: 15px; 
+}
+
 #subheader nav li:not(:last-child){
   border-right: solid 1px;
   color: black;
+}
+
+#subheader nav img {
+  margin-right: 10px; 
+  max-width: 25px;
 }
 
 .sticky {
