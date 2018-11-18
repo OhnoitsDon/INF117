@@ -123,6 +123,46 @@ header a:hover{
   font-weight:bold;
 }
 
+/**** Competition --> Rules & Regulations ****/
+
+/*Video Icon*/
+
+img video_icon{
+  position: relative;
+}
+
+.col-md-4 p{
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
+
+/*PDF Icon*/
+
+img pdf_file{
+  position: relative;
+}
+
+.col-md-4 p{
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
+
+/*Event Icon*/
+
+#event_file{
+  position: relative;
+}
+
+.col-md-4 p{
+  margin: 0;
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
+ 
+
 /* Showcase */
 #showcase{
   min-height:700px;
@@ -477,6 +517,7 @@ footer{
     max-width: none;
   }
   .col-md-1 {
+
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
