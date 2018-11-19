@@ -125,43 +125,18 @@ header a:hover{
 
 /**** Competition --> Rules & Regulations ****/
 
-/*Video Icon*/
-
-img video_icon{
-  position: relative;
+.col-md-5 img {
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+    margin-top:10%;
 }
 
-.col-md-4 p{
+.col-md-5 p{
   text-align: center;
   font-weight:bold;
   font-size: 30pt;
 }
-
-/*PDF Icon*/
-
-img pdf_file{
-  position: relative;
-}
-
-.col-md-4 p{
-  text-align: center;
-  font-weight:bold;
-  font-size: 30pt;
-}
-
-/*Event Icon*/
-
-#event_file{
-  position: relative;
-}
-
-.col-md-4 p{
-  margin: 0;
-  text-align: center;
-  font-weight:bold;
-  font-size: 30pt;
-}
- 
 
 /* Showcase */
 #showcase{
