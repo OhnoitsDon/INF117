@@ -1,0 +1,14 @@
+@import "style.css";
+
+.col-md-5 img {
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+    margin-top:10%;
+}
+
+.col-md-5 p{
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
