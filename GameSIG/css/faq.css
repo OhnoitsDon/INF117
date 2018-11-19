@@ -1,0 +1,147 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:black;
+}
+
+p {
+  font-size: 12pt;
+}
+
+/* Global */
+.container {
+  text-align: justify;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.content {
+  margin:auto;
+  overflow:hidden;
+  background-color: white;
+}
+
+.social_media{
+  float: right;
+  margin-right: 50px;
+  margin-top: -70px;
+}
+
+.social_media img{
+  padding: 5px;
+}
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:black
+  color:#ffffff;
+  padding-top:30px;
+  min-height:50px;
+  /*border-bottom:white 3px solid;*/
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 30px 0 30px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  display: inline-block;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header .highlight, header .current a{
+  color:#A381F3;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/**** Competition --> Rules & Regulations ****/
+
+.col-md-5 img {
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+    margin-top:10%;
+}
+
+.col-md-5 p{
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
+
+
+
+
+
+
+
+/* FAQ PAGE (DANNY) DO NOT CHANGE!*/
+#middle_content{
+  background-color: white;
+}
+#middle_content h1{
+  color: #A381F3;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#first_item{
+  color: #A381F3;
+  text-align: left;
+  margin-top: 2em;
+}
+#middle_content h2{
+  color: #A381F3;
+  text-align: left;
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+#middle_content p{
+  text-align: left;
+  margin-top: 0em;
+  text-indent: 2em;
+}
+
+#middle_content hr{
+  border-color: #A381F3;
+  margin-top: 2em;
+}

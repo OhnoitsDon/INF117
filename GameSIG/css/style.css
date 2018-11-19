@@ -11,6 +11,7 @@ p {
 
 /* Global */
 .container {
+  text-align: justify;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -33,29 +34,34 @@ p {
   padding: 5px;
 }
 
-ul{
-  margin:0;
-  padding:0;
-}
-
-.button_1{
+/* .button_1{
   height:38px;
   background:#FFDE00;
   border:0;
   padding-left: 20px;
   padding-right:20px;
   color:#ffffff;
-}
+} */
 
 .enroll_button{
   width: 260px;
   font-size: 8pt;
   background:#A381F3;
-  border:0;
   padding-left: 20px;
   padding-right:20px;
   border-radius:8px;
   color:black;
+}
+
+.enroll_button:hover {background-color: rgb(84, 59, 141)}
+
+.enroll_button:focus { outline: none;}
+
+.enroll_button:active {
+  color:white;
+  background-color: rgb(120, 64, 250);
+  /* box-shadow: 0 5px rgb(248, 244, 244); */
+  transform: translateY(4px);
 }
 
 .dark{
@@ -73,6 +79,11 @@ header{
   padding-top:30px;
   min-height:50px;
   /*border-bottom:white 3px solid;*/
+}
+
+header ul{
+  margin:0;
+  padding:0;
 }
 
 header a{
@@ -112,6 +123,21 @@ header a:hover{
   font-weight:bold;
 }
 
+/**** Competition --> Rules & Regulations ****/
+
+.col-md-5 img {
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+    margin-top:10%;
+}
+
+.col-md-5 p{
+  text-align: center;
+  font-weight:bold;
+  font-size: 30pt;
+}
+
 /* Showcase */
 #showcase{
   min-height:700px;
@@ -144,6 +170,20 @@ header a:hover{
 #subheader a {
   padding: 20px;
   color:#000000;
+}
+
+#subheader nav {
+  margin-top: 15px;
+}
+
+#subheader nav li:not(:last-child){
+  border-right: solid 1px;
+  color: black;
+}
+
+#subheader nav img {
+  margin-right: 10px;
+  max-width: 25px;
 }
 
 .sticky {
@@ -452,6 +492,7 @@ footer{
     max-width: none;
   }
   .col-md-1 {
+
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
@@ -691,7 +732,6 @@ footer{
 }
 /*Gallery */
 .galleryLayout{
-
     display: block;
     margin-left: 15%;
     margin-right: 30px;
@@ -699,39 +739,40 @@ footer{
 
 
 }
+  margin: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -600px;
+  display: grid;
+  grid-gap:10px;
+    grid-template-columns: 400px 400px 400px;
+    background-color:#fff;
+    color:#444;
+  }
+  .box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 100%;
+  }
+  .a{
+    grid-column: 1/3;
+    grid-row: 1;
 
-
-
-/* FAQ PAGE (DANNY) DO NOT CHANGE!*/
-
-#middle_content{
-  background-color: white;
-}
-#middle_content h1{
-  color: #A381F3;
-  margin-top: 1em;
-  text-align: center;
-}
-
-#first_item{
-  color: #A381F3;
-  text-align: left;
-  margin-top: 2em;
-}
-#middle_content h2{
-  color: #A381F3;
-  text-align: left;
-  margin-bottom: 0em;
-  margin-top: 1em;
-}
-
-#middle_content p{
-  text-align: left;
-  margin-top: 0em;
-  text-indent: 2em;
-}
-
-#middle_content hr{
-  border-color: #A381F3;
-  margin-top: 2em;
-}
+  }
+  .b{
+    grid-column: 3;
+    grid-row: 1/3;
+    word-wrap: break-word;
+  }
+  .c{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .d{
+    grid-column: 2;
+    grid-row: 2;
+  }

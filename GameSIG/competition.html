@@ -8,6 +8,7 @@
   	<meta name="Denenbees" content="Brad Traversy">
     <title>IEEE GameSIG | Competition</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
   </head>
   <body>
 
@@ -21,9 +22,9 @@
         </center>
       </div>
       <div class='social_media'>
-        <img src='./img/facebook_icon.png'>
-        <img src='./img/twitter_icon.png'>
-        <img src='./img/instagram_icon.png'>
+        <img src='./img/social_media/facebook_icon.png'>
+        <img src='./img/social_media/twitter_icon.png'>
+        <img src='./img/social_media/instagram_icon.png'>
       </div>
 
       <br></br>
@@ -50,11 +51,11 @@
       <div class="container">
         <center>
           <nav>
-            <ul>
-              <li class="current"><a href="#rules_and_regulations">Rules and Regulation</a></li>
-              <li><a href="#judges">Judges</a></li>
-              <li><a href="#sponsors">Sponsors</a></li>
-              <li><a href="#event_history">Event History</a></li>
+            <ul id="inner_subheader">
+              <li><a class="current" href="#rules_and_regulations"><img src='./img/subheader_icons/rules_regs.png'> Rules and Regulation</a></li>
+              <li><a href="#judges"><img src='./img/subheader_icons/judge.png'> Judges</a></li>
+              <li><a href="#sponsors"><img src='./img/subheader_icons/handshake.png'>Sponsors</a></li>
+              <li><a href="#event_history"><img src='./img/subheader_icons/event.png'>Event History</a></li>
             </ul>
           </nav>
         </center>
@@ -67,15 +68,10 @@
         <center>
           <h1>Rules and Regulations</h1>
         </center>
-          <br>
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <center>
-                <center>
-              </div>
-
-              <div class="col-md-1">
+              <div class="col-md-5">
+                <img id="video_icon" src='./img/rules_regs/video_icon.png'><p>Video</p>
               </div>
 
               <div class="col-md-6">
@@ -103,6 +99,7 @@
                 <p>
                 This one-pager should include the following elements and must not use a font smaller than 9 point:
                 </p>
+
                 <ul>
                   <li>Title and one-sentence game description (“elevator pitch”)</li>
                   <li>List of team members and their colleges or universities, with contact emails.</li>
@@ -114,31 +111,28 @@
                   <li>Web link for YouTube video (further information about game, game download, development team, etc. may be added to YouTube video page).</li>
                   <li>The game must reasonably be expected to receive a rating of either “E” or “T” from the Entertainment Software Rating Board [ESRB], based on ESRB’s criteria as of the announcement date of this showcase.</li>
                 </ul>
+
               </div>
 
-              <div class="col-md-1">
-              </div>
-
-              <div class="col-md-4">
-                <center>
-                <center>
+              <div class="col-md-5">
+                  <img src='./img/rules_regs/pdf_file.png'><p>PDF</p>
               </div>
             </div>
 
             <hr>
 
             <div class="row">
-              <div class="col-md-4">
-                <center>
-                <center>
-              </div>
-
-              <div class="col-md-1">
+              <div class="col-md-5">
+                  <img src='./img/rules_regs/event_icon.png'><p>Event</p>
               </div>
 
               <div class="col-md-6">
-                <p>A finger recycles the absolute cider throughout the applause. The instrumental hammer straws a mathematical fossil. How can her penguin shift outside an objectionable predecessor? A crack genetics litters a cow. The winter fines the transformation.A finger recycles the absolute cider throughout the applause.
-                </p>
+                <br><br>
+                <ul>
+                  <li>Finalists will be selected by a committee of judges drawn from the local industry and universities</li>
+                  <li>Actual game play for at least one game level must be demonstrated by a live player on stage (prerecorded videos are not acceptable)</li>
+                  <li>Finalists must provide five images of your game, including one of your game logo, in 1920x1080 resolution, for display on the monitors in the auditorium. You can email these images to the same email address used for submitting your PDF document. Images are due one week prior to the event.</li>
+                </ul>
               </div>
             </div>
         </div>
@@ -296,21 +290,8 @@
         </div>
     </div>
 
-    <!-- Fixed Subheader when scrolling down -->
-    <script>
-      window.onscroll = function() {myFunction()};
-
-      var subheader = document.getElementById('subheader');
-      var sticky = subheader.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          subheader.classList.add("sticky");
-        } else {
-          subheader.classList.remove("sticky");
-        }
-      }
-    </script>
+    <!-- JavaScript -->
+    <script src="./js/competition.js"></script>
 
     <footer>
       <p>Acme Web Deisgn, Copyright &copy; 2017</p>
