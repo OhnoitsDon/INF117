@@ -1,14 +1,18 @@
 @import "style.css";
 
-.col-md-5 img {
-    vertical-align: middle;
-    display: block;
-    margin: auto;
-    margin-top:10%;
+#rules {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.col-md-5 p{
-  text-align: center;
-  font-weight:bold;
-  font-size: 30pt;
+#rules img {
+	display: block;
+    margin: auto;
+}
+
+#rules p {
+	display: block;
+	font-weight:bold;
+	font-size: 30pt;
 }
