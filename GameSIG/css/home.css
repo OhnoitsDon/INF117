@@ -10,13 +10,13 @@
   color:black;
 }
 
-.enroll_button:hover {background-color: rgb(84, 59, 141)}
+.enroll_button:hover {background-color: #A381F3}
 
 .enroll_button:focus { outline: none;}
 
 .enroll_button:active {
   color:white;
-  background-color: rgb(120, 64, 250);
+  background-color: #A381F3;
   transform: translateY(4px);
 }
 
