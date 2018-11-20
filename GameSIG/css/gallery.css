@@ -1,10 +1,9 @@
 @import "style.css";
+@import "header.css";
+@import "subheader.css";
+@import "footer.css";
 
 .galleryLayout{
-    /*display: block;
-    margin-left: 15%;
-    margin-right: 30px;
-    width: 350px;*/ 
 	margin: 20px;
 	position: relative;
 	top: 50%;
