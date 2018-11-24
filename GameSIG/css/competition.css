@@ -11,11 +11,11 @@
 
 #rules img {
 	display: block;
-    margin: auto;
+	margin: auto;
+	max-width: 350px;
 }
 
 #rules p {
 	display: block;
 	font-weight:bold;
-	font-size: 30pt;
 }
