@@ -12,10 +12,11 @@
 #rules img {
 	display: block;
 	margin: auto;
-	max-width: 350px;
+	max-width: 330px;
 }
 
-#rules p {
+p{
 	display: block;
-	font-weight:bold;
+	margin: auto;
 }
+
