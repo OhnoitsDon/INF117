@@ -3,6 +3,10 @@
 @import "subheader.css";
 @import "footer.css";
 
+
+hr{
+	color: #A381F3;
+}
 #rules {
 	display: flex;
     align-items: center;
@@ -37,15 +41,13 @@
 	max-width: 230px;
 }
 
-
-
 /* Sponsors */
 .col-md-3 img{
 	padding: 0;
 	height: 200px;
 }
 .col-md-6 p{ 
-	column-width: 531px;
+	padding: 0;
 	margin: auto;
 	display: block;
 }
