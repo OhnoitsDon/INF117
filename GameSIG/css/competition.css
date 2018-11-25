@@ -11,7 +11,21 @@
 
 #rules img {
 	display: block;
-	margin: auto;
+	margin-left: 0;
+	max-width: 230px;
+	max-height: 230px;
+}
+
+#pdf img {
+	display: block;
+	margin-right: 0;
+	max-width: 230px;
+	max-height: 230px;
+}
+
+#event img {
+	display: block;
+	margin-left: 0;
 	max-width: 230px;
 	max-height: 230px;
 }
