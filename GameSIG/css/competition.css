@@ -31,18 +31,27 @@
 }
 
 .col-md-2 img{
-	display: block;
-	margin-left: 0;
-	max-width: 100px;
+	column-span: 2;
+	column-count: 1;
+	padding-right: 0;
+	max-width: 230px;
 }
+
+
 
 /* Sponsors */
 .col-md-3 img{
-	margin-right: auto;
-	width: 200px;
+	padding: 0;
+	height: 200px;
 }
 .col-md-6 p{ 
 	column-width: 531px;
 	margin: auto;
 	display: block;
+}
+
+.col-md-8 p{
+	display: block;
+	margin: 0;
+	padding: 0;
 }
