@@ -10,28 +10,28 @@
 }
 
 #rules img {
-	display: block;
+	position: absolute;
 	margin-left: 0;
 	max-width: 230px;
 	max-height: 230px;
 }
 
-#pdf img {
-	display: block;
-	margin-right: 0;
-	max-width: 230px;
-	max-height: 230px;
+#pdf img{
+	position: absolute;
+	right: 0;
+	max-width: 250px;
+	max-height: 250px;
 }
 
 #event img {
-	display: block;
+	position: absolute;
 	margin-left: 0;
 	max-width: 230px;
 	max-height: 230px;
 }
 
-p{
-	display: block;
+.col-md-6 p{ 
+	column-width: 531px;
 	margin: auto;
+	display: block;
 }
-
