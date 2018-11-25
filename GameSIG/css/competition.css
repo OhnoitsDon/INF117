@@ -30,6 +30,17 @@
 	max-height: 230px;
 }
 
+.col-md-2 img{
+	display: block;
+	margin-left: 0;
+	max-width: 100px;
+}
+
+/* Sponsors */
+.col-md-3 img{
+	margin-right: auto;
+	width: 200px;
+}
 .col-md-6 p{ 
 	column-width: 531px;
 	margin: auto;
