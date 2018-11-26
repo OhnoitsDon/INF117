@@ -47,11 +47,10 @@ input[type=submit]:active {
 }
 
 .form-container {
+  display: absolute;
   background: white;
   border-radius: 5px;
-  padding-left: 40em;
-  padding-right: 40em;
-  padding-bottom: 2em;
+  padding: 0;
 }
 /*center image in ticket*/
 .centerImg{
