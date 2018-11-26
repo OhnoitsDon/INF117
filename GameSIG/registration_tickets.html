@@ -65,46 +65,51 @@
 <!--------Registration--------->
 <div class="content" style="background-color: white; color: black">
   <br>
-    <center>
-      <h1>Registration</h1>
-    </center>
+    <div class="form-container">
+      <div class="row">
+        <div class="title"><h1>Registration</h1></div>
+      </div>
+
+        <div class="row">
+            <div class="col-md-1">
+              <form action="/action_page.php">
+
+              <label for="first-name">First Name</label>
+              <input type="text" id="first" name="first">
+
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last" name="last">
+      
+              <label for="email-address">Email Address</label>
+              <input type="text" id="email" name="email">
+      
+             <label for="subject">Subject</label>
+              <select type="a-subject" name="a-subject">
+                  <option value="subject0" color: #ccc>Choose a Subject</option>
+                <option value="subject1">Do I have to be 18 years old to enter the competition?</option>
+                <option value="subject2">What format is used for the submission documentation?</option>
+                <option value="subject3">How do I buy tickets to watch the competition?</option>
+              </select>
+      
+          <label for="message">Message</label>
+          <textarea id="write-message" name="write-message" style="height:200px"></textarea>
+      
+          <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+          </div>
+    </div>
   
     <div style="color: #A381F3">
     <center>
-    <!--   <h1>Seventh Annual IEEE GameSIG Intercollegiate<br>Video Game Showcase</h1> -->
+    
     </center>
     </div>
   <!--   <img src="./img/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" > -->
     
-    <div>
-      <center>
-     <!--  <div style='float:left; width:50%'>
-        <p>DATE AND TIME<br>
-          Sat, May 5, 2018<br>
-          12:00 PM – 6:00 PM PDT<br><br>
-          $0-$25
-        </p>
-      </div> -->
-  
-     <!--  <div style='float:right; width:50%;'>
-        <p>LOCATION<br>
-          Sandhu Conference Center<br>
-          Chapman University<br>
-          571 N Grand St<br>
-          Orange, CA 92867</p>
-      </div> -->
-  
-    </center>
-    </div>
-  
-      <center>
-        <!--   <button class="ticket_button"><h2>BUY</h2></button> -->
-      </center>
+
   <br><br><br>
   </div>
-  
-      
-
   
 <!--------- Tickets------------>
 <div class="content" style="background-color: white; color: black">
