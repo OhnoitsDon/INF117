@@ -5,7 +5,7 @@
 
 
 hr{
-	color: #A381F3;
+	border-color: #A381F3;
 }
 #rules {
 	display: flex;
@@ -53,7 +53,7 @@ hr{
 }
 
 .col-md-8 p{
-	display: block;
+	display: center;
 	margin: 0;
 	padding: 0;
 }
