@@ -48,8 +48,13 @@ input[type=submit]:active {
 
 .form-container {
   background: white;
-  border-radius: 5px;
-  padding-left: 40em;
-  padding-right: 40em;
-  padding-bottom: 2em;
+  /* border-radius: 5px; */
+  /* padding-left: 7em;
+  padding-right: 7em;
+  padding-bottom: 2em; */
+  padding: 0em 22em;
+}
+
+.form-container .row{
+  text-align: left;
 }
