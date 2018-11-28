@@ -6,7 +6,8 @@ label{
   color: #A381F3;
   font-weight: bold;
   width: 150px;
-  float: left;
+
+  text-align: left;
 }
 
 .title{

@@ -50,79 +50,118 @@
     </header>
 
 <!--------Registration--------->
-<div  class="content" style="background-color: white; color: black; margin-left:auto;margin-right:auto">
+<div  class="content" style="background-color: white; color: black;">
   <br>
     <div class="form-container">
       <div class="row">
         <div class="title"><h1>Registration</h1></div>
       </div>
 
-        <div class="row">
-            <div class="col-md-1">
+
+      <center>
               <form action="/action_page.php">
+              <div>
+                <label for="first-name">First Name</label>
+                <br>
+                <input type="text" id="first" name="first">
+              </div>
+              <div>
+                <label for="last-name">Last Name</label>
+                <br>
+                <input type="text" id="last" name="last">
+             </div>
+             <div>
+                <label for="email-address">Your Email Address</label>
+                <br>
+                <input type="text" id="email" name="email">
+            </div>
 
-              <label for="first-name">First Name</label>
-              <input type="text" id="first" name="first">
-
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last" name="last">
-
-              <label for="email-address">Your Email Address</label>
-              <input type="text" id="email" name="email">
-
+            <div>
               <label for="team_members">Team Members Names</label>
-              <br>
+
+            </div>
+            <div>
               <label for="member1"> Member 1</label>
+              <br>
               <input type="text" id="member1name" member-name="member1name">
-
+            </div>
+            <div>
               <label for="member2">Member 2</label>
+              <br>
               <input type="text" id="member2name" member-name="member2name">
-
+            </div>
+            <div>
               <label for="member2"> Member 3</label>
+              <br>
               <input type="text" id="member3name" member-name="member3name">
-
+            </div>
+            <div>
               <label for="member2"> Member 4</label>
+              <br>
               <input type="text" id="member3name" member-name="member3name">
-
+            </div>
+            <div>
               <label for="schoolLevel">School Level</label>
+              <br>
                <select type="a-subject" name="a-subject">
                    <option value="subject0" color: #ccc>Choose a Subject</option>
                  <option value="subject1">High School</option>
                  <option value="subject2">College</option>
                </select>
+             </div>
 
+             <div>
                <label for="target-platform">Target Platform and Audience</label>
+               <br>
                <textarea id="gameplay" name="target" style="height:100px"></textarea>
-
+             </div>
+             <div>
               <label for="gameplay-summary">Summary of Gameplay</label>
+              <br>
               <textarea id="gameplay" name="gameplay" style="height:100px"></textarea>
-
+            </div>
+            <div>
               <label for="message">Key Game Features</label>
+              <br>
               <textarea id="game-features" name="game-features" style="height:100px"></textarea>
-
+            </div>
+            <div>
               <label for="gameplay-credits">Third-Party and Ready Made Asset Credits</label>
+              <br>
               <textarea id="gameplay" name="gameplay-credits" style="height:100px"></textarea>
-
+            </div>
+            <div>
               <label for="Faculty">Faculty Member Name & Contact Information, if any</label>
+              <br>
               <textarea id="gameplay" name="Faculty" style="height:20px"></textarea>
+            </div>
 
+            <div>
               <label for="YouTube-Link">YouTube Link</label>
+              <br>
               <textarea id="gameplay" name="YouTube Link" style="height:20px"></textarea>
-
+            </div>
+            <div>
               <label for="Misc.-Note">Misc. Notes</label>
+              <br>
               <textarea id="gameplay" name="Misc.-Note" style="height:100px"></textarea>
-
+            </div>
+            <div>
               <label for="question1">What were the top technical challenges that you encountered in the project?</label>
+              <br>
               <textarea id="question1" name="Misc.-Note" style="height:200px"></textarea>
-
+            </div>
+            <div>
               <label for="question2">How did the design evolve during development? what changed, and what didn't</label>
+              <br>
               <textarea id="question2" name="Misc.-Note" style="height:200px"></textarea>
+            </div>
+            <div>
+              <label for="Picture">3 Thumbnails of Game Art: </label>
 
-              <label for="Misc.-Note">Thumbnail of Game Art</label>
-              <form action="/action_page.php">
-                <input type="file" name="pic" accept="image/*">
+              <input type="file" name="pic" accept="image/*" multiple>
 
-              </form>
+            </div>
 
 
 
@@ -130,12 +169,12 @@
             <br>
               <input type="submit" value="SUBMIT">
               </form>
-            </div>
-          </div>
+
+
     </div>
 
     <div style="color: #A381F3">
-    <center>
+
 
     </center>
     </div>
@@ -184,6 +223,7 @@
        <button class="ticket_button"><h2>BUY</h2></button>
     </center>
   </div>
+
 
 <br><br><br>
 </div>
