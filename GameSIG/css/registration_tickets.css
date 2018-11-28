@@ -83,3 +83,7 @@ input[type=submit]:active {
 h1{
   font-size: 30px;
 }
+#bootstrap-overrides centerText{
+  padding-right: auto;
+  padding-left: auto;
+}

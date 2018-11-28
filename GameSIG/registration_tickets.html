@@ -17,7 +17,9 @@
       <div class="container">
         <center>
           <div>
+            <a href="index.html">
             <img src='./img/logo.png'>
+          </a>
           </div>
         </center>
       </div>
@@ -48,7 +50,7 @@
     </header>
 
 <!--------Registration--------->
-<div class="content" style="background-color: white; color: black">
+<div  class="content" style="background-color: white; color: black; margin-left:auto;margin-right:auto">
   <br>
     <div class="form-container">
       <div class="row">
@@ -67,7 +69,7 @@
 
               <label for="email-address">Your Email Address</label>
               <input type="text" id="email" name="email">
-              
+
               <label for="team_members">Team Members Names</label>
               <br>
               <label for="member1"> Member 1</label>
@@ -82,29 +84,61 @@
               <label for="member2"> Member 4</label>
               <input type="text" id="member3name" member-name="member3name">
 
+              <label for="schoolLevel">School Level</label>
+               <select type="a-subject" name="a-subject">
+                   <option value="subject0" color: #ccc>Choose a Subject</option>
+                 <option value="subject1">High School</option>
+                 <option value="subject2">College</option>
+               </select>
+
+               <label for="target-platform">Target Platform and Audience</label>
+               <textarea id="gameplay" name="target" style="height:100px"></textarea>
+
               <label for="gameplay-summary">Summary of Gameplay</label>
-              <textarea id="gameplay" name="gameplay" style="height:200px"></textarea>
-      
+              <textarea id="gameplay" name="gameplay" style="height:100px"></textarea>
+
               <label for="message">Key Game Features</label>
-              <textarea id="game-features" name="game-features" style="height:200px"></textarea>
-      
+              <textarea id="game-features" name="game-features" style="height:100px"></textarea>
+
+              <label for="gameplay-credits">Third-Party and Ready Made Asset Credits</label>
+              <textarea id="gameplay" name="gameplay-credits" style="height:100px"></textarea>
+
+              <label for="Faculty">Faculty Member Name & Contact Information, if any</label>
+              <textarea id="gameplay" name="Faculty" style="height:20px"></textarea>
+
+              <label for="YouTube-Link">YouTube Link</label>
+              <textarea id="gameplay" name="YouTube Link" style="height:20px"></textarea>
+
+              <label for="Misc.-Note">Misc. Notes</label>
+              <textarea id="gameplay" name="Misc.-Note" style="height:100px"></textarea>
+
+              <label for="Misc.-Note">Thumbnail of Game Art</label>
+              <form action="/action_page.php">
+                <input type="file" name="pic" accept="image/*">
+
+              </form>
+
+
+
+
+            <br>
               <input type="submit" value="SUBMIT">
               </form>
             </div>
           </div>
     </div>
-  
+
     <div style="color: #A381F3">
     <center>
-    
+
     </center>
     </div>
   <!--   <img src="./img/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" > -->
-    
+
 
   <br><br><br>
   </div>
-  
+
 <!--------- Tickets------------>
 <div class="content" style="background-color: white; color: black">
 <br>
@@ -118,7 +152,7 @@
   </center>
   </div>
   <img src="./img/registration_tickets/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" >
-  
+
   <div>
     <center>
     <div style='float:left; width:50%'>
