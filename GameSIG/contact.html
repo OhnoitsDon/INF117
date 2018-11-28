@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Affordable and professional web design">
 	  <meta name="keywords" content="web design, affordable web design, professional web design">
-  	<meta name="author" content="Brad Traversy">
-    <title>IEEE GameSIG | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
+  	<meta name="author" content="The Denenbees">
+    <title>Acme Web Deisgn | Services</title>
+    <link rel="stylesheet" href="./css/contact.css">
   </head>
   <body>
     <header>
       <div class="container">
         <center>
           <div>
-            <a href="index.html"><img src='./img/logo.png'></a>
+            <img src='./img/logo.png'>
           </div>
         </center>
       </div>
       <div class='social_media'>
-        <img src='./img/facebook_icon.png'>
-        <img src='./img/twitter_icon.png'>
-        <img src='./img/instagram_icon.png'>
+        <a href=""><img src='./img/social_media/youtube_icon.png'></a>
+        <a href=""><img src='./img/social_media/facebook_icon.png'></a>
+        <a href=""><img src='./img/social_media/twitter_icon.png'></a>
+        <a href=""><img src='./img/social_media/instagram_icon.png'></a>
       </div>
 
       <br></br>
@@ -30,25 +31,48 @@
         <center>
           <nav>
             <ul>
-              <li class="current"><a href="index.html">HOME</a></li>
-              <li><a href="about.html">COMPETITION</a></li>
-              <li><a href="registration.html">REGISTRATION / TICKETS</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="competition.html">COMPETITION</a></li>
+              <li><a href="registration_tickets.html">REGISTRATION / TICKETS</a></li>
               <li><a href="gallery.html">GALLERY</a></li>
               <li><a href="about.html">ABOUT US</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
+              <li class="current"><a href="contact.html">CONTACT US</a></li>
             </ul>
           </nav>
         </center>
       </div>
     </header>
 
-    <section id="content">
-      <div class="container">
-        <h1>TITLE OF PAGE</h1>
-        <p>[some content]</p>
+    <section class="form-container">
+      <div class="row">
+        <div class="title"><h1>Contact Us</h1></div>
 
-      </div>
+              <form action="/action_page.php">
+
+              <label for="first-name">First Name</label>
+              <input type="text" id="first" name="first">
+
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last" name="last">
+
+              <label for="email-address">Email Address</label>
+              <input type="text" id="email" name="email">
+
+             <label for="subject">Subject</label>
+              <select type="a-subject" name="a-subject">
+                  <option value="subject0" color: #ccc>Choose a Subject</option>
+                <option value="subject1">Do I have to be 18 years old to enter the competition?</option>
+                <option value="subject2">What format is used for the submission documentation?</option>
+                <option value="subject3">How do I buy tickets to watch the competition?</option>
+              </select>
+
+          <label for="message">Message</label>
+          <textarea id="write-message" name="write-message" style="height:200px"></textarea>
+
+          <input type="submit" value="SUBMIT">
+              </form>
+            </div>
     </section>
 
 
