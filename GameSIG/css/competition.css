@@ -7,32 +7,61 @@
 hr{
 	border-color: #A381F3;
 }
-#rules {
+
+/* All Images: Vertical Centering */
+#rules, #pdf, #event, #judge1, #judge2 {
 	display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
+
+/* Rules and Regulation Images: Horizontal Centering and Resizing */
 #rules img {
-	position: absolute;
-	margin-left: 0;
+	margin: auto;
 	max-width: 230px;
 	max-height: 230px;
 }
-
 #pdf img{
-	position: absolute;
-	right: 0;
+	margin: auto;
 	max-width: 250px;
 	max-height: 250px;
 }
-
 #event img {
-	position: absolute;
-	margin-left: 0;
+	margin: auto;
 	max-width: 230px;
 	max-height: 230px;
 }
+
+/* Judges Images: Horizontal Centering */
+#judge1 center, #judge2 center, #judge3 {
+	margin: auto;
+}
+
+
+/* Rows(grid-container) and Columns(grid-item) */
+.grid-container-25-75 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.grid-container-75-25 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.grid-container-80-20 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.grid-container-100 {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.grid-item {
+  font-size: 30px;
+  padding: 20px;
+}
+
+
 
 .col-md-2 img{
 	column-span: 2;
@@ -40,8 +69,6 @@ hr{
 	padding-right: 0;
 	max-width: 230px;
 }
-
-/* Sponsors */
 .col-md-3 img{
 	padding: 0;
 	height: 200px;
@@ -51,7 +78,6 @@ hr{
 	margin: auto;
 	display: block;
 }
-
 .col-md-8 p{
 	display: center;
 	margin: 0;
