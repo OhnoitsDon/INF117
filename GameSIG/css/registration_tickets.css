@@ -5,8 +5,14 @@
 label{
   color: #A381F3;
   font-weight: bold;
+<<<<<<< HEAD
+  width: 150px;
+
+  text-align: left;
+=======
   width: 400px;
   float: left;
+>>>>>>> 7f2453eca00719c4d7ab0eb0055e105baf742a29
 }
 
 .box1, .box2, .box3, .box4{
@@ -103,4 +109,8 @@ input[type=submit]:active {
 
 h1{
   font-size: 30px;
+}
+#bootstrap-overrides centerText{
+  padding-right: auto;
+  padding-left: auto;
 }
