@@ -9,10 +9,16 @@ hr{
 }
 
 /* All Images: Vertical Centering */
-#rules, #pdf, #event, #judge1, #judge2 {
+#rules, #pdf, #event, #judge, #sponsor {
 	display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+/* All Images: Horizontal Centering */
+#judge1 center, #judge center, #sponsor center {
+	margin: auto;
 }
 
 
@@ -31,11 +37,6 @@ hr{
 	margin: auto;
 	max-width: 230px;
 	max-height: 230px;
-}
-
-/* Judges Images: Horizontal Centering */
-#judge1 center, #judge2 center, #judge3 {
-	margin: auto;
 }
 
 
@@ -62,24 +63,10 @@ hr{
 }
 
 
-
-.col-md-2 img{
+/* Sponsors Images: Resizing */
+#sponsor img {
 	column-span: 2;
 	column-count: 1;
 	padding-right: 0;
 	max-width: 230px;
-}
-.col-md-3 img{
-	padding: 0;
-	height: 200px;
-}
-.col-md-6 p{ 
-	padding: 0;
-	margin: auto;
-	display: block;
-}
-.col-md-8 p{
-	display: center;
-	margin: 0;
-	padding: 0;
 }
