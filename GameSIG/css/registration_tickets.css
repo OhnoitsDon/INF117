@@ -5,22 +5,41 @@
 label{
   color: #A381F3;
   font-weight: bold;
-  width: 150px;
+  width: 400px;
   float: left;
+}
+
+.box1, .box2, .box3, .box4{
+  position: realtive;
+  display:inline-block; 
+  border-style: solid;
+  border-color:#A381F3;
+  margin: 5px;
+ /*  width: calc(25% - 10px); */
+  height:150px;
+  width: 150px;
 }
 
 .title{
   margin: auto;
 }
 
- input[type=text], select, textarea {
+input[type=checkbox], select, textarea{
+
+  width: 100%;
+
+}
+
+
+ input[type=text], input[type=date], select, textarea {
+  font-size: 12pt;
   font-weight: bold;
   width: 100%;
   padding-left: 12px;
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
-  width: 50em;
+  width: 40em;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -35,6 +54,8 @@ input[type=submit]{
   font-weight: bold;
   color:black;
 }
+
+
 
 input[type=submit]:hover {background-color: #A381F3}
 
