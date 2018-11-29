@@ -40,6 +40,15 @@ hr{
 }
 
 
+/* Sponsors Images: Resizing */
+#sponsor img {
+	column-span: 2;
+	column-count: 1;
+	padding-right: 0;
+	max-width: 230px;
+}
+
+
 /* Rows(grid-container) and Columns(grid-item) */
 .grid-container-25-75 {
   display: grid;
@@ -60,13 +69,4 @@ hr{
 .grid-item {
   font-size: 30px;
   padding: 20px;
-}
-
-
-/* Sponsors Images: Resizing */
-#sponsor img {
-	column-span: 2;
-	column-count: 1;
-	padding-right: 0;
-	max-width: 230px;
 }
