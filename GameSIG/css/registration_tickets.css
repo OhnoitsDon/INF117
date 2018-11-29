@@ -5,22 +5,29 @@
 label{
   color: #A381F3;
   font-weight: bold;
-  width: 150px;
+  width: 400px;
   float: left;
+}
+
+input[type=checkbox]{
+  display: inline-block;
+  color: #A381F3;
+  
 }
 
 .title{
   margin: auto;
 }
 
- input[type=text], select, textarea {
+ input[type=text], input[type=date], select, textarea {
+  font-size: 12pt;
   font-weight: bold;
   width: 100%;
   padding-left: 12px;
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
-  width: 50em;
+  width: 40em;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -35,6 +42,8 @@ input[type=submit]{
   font-weight: bold;
   color:black;
 }
+
+
 
 input[type=submit]:hover {background-color: #A381F3}
 

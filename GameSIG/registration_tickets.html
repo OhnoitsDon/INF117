@@ -59,18 +59,19 @@
             <div class="col-md-1">
               <form action="/action_page.php">
 
-              <label for="first-name">First Name</label>
+              <label for="date">Date</label>
+              <input type="date" name="date" name="date">
+
+              <label for="game-name">Game Name</label>
               <input type="text" id="first" name="first">
 
-              <label for="last-name">Last Name</label>
+              <label for="team-name">Team Name</label>
               <input type="text" id="last" name="last">
-
-              <label for="email-address">Your Email Address</label>
-              <input type="text" id="email" name="email">
               
-              <label for="team_members">Team Members Names</label>
+              <label for="team_members">List of Team Members, Years and Their Schools</label>
+              <textarea id="team-members" name="team-members"></textarea>
               <br>
-              <label for="member1"> Member 1</label>
+              <!-- <label for="member1"> Member 1</label>
               <input type="text" id="member1name" member-name="member1name">
 
               <label for="member2">Member 2</label>
@@ -80,11 +81,15 @@
               <input type="text" id="member3name" member-name="member3name">
 
               <label for="member2"> Member 4</label>
-              <input type="text" id="member3name" member-name="member3name">
+              <input type="text" id="member3name" member-name="member3name"> -->
 
-              <label for="gameplay-summary">Summary of Gameplay</label>
-              <textarea id="gameplay" name="gameplay" style="height:200px"></textarea>
-      
+              <label for="school-level">School Level</label>
+
+              <input type="checkbox" name="college-university" value="checked" id="college-checked">
+              <label for="college-checked">College/University</label>
+            <input type="checkbox" name="high-school" value="checked" id="hs-checked"><label for="hs-checked">High School</label>
+              <!-- <textarea id="school-level" name="school-level"></textarea> -->
+              <br>
               <label for="message">Key Game Features</label>
               <textarea id="game-features" name="game-features" style="height:200px"></textarea>
       
