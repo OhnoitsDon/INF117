@@ -3,6 +3,9 @@
 @import "subheader.css";
 @import "footer.css";
 
+hr{
+	border-color: #A381F3;
+}
 .galleryLayout{
 	margin: 20px;
 	position: relative;
