@@ -8,15 +8,20 @@
   margin-top: 80px;
   background:#A381F3;
   border-radius:8px;
-  color:black;
+  color:white;
+  font-weight: lighter;
 }
 
-.enroll_button:hover {background-color: #A381F3}
+.enroll_button:hover {
+  background-color: #A381F3;
+  font-weight: bold;
+  color: black;
+}
 
 .enroll_button:focus { outline: none;}
 
 .enroll_button:active {
-  color:white;
+  color:black;
   background-color: #A381F3;
   transform: translateY(4px);
 }
