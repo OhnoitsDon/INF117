@@ -1,5 +1,5 @@
 // Fixed subheader at top
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction(),scrollFunction()};
  var subheader = document.getElementById('subheader');
 var sticky = subheader.offsetTop;
  function myFunction() {
@@ -10,7 +10,7 @@ var sticky = subheader.offsetTop;
   }
 }
  //Cache selectors
-var lastId, topMenu = $("#inner_subheader"), 
+var lastId, topMenu = $("#inner_subheader"),
   topMenuHeight = topMenu.outerHeight()+1
   // All list items
   menuItems = topMenu.find("a"),
@@ -39,10 +39,27 @@ $(window).scroll(function() {
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
-   
+
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
        menuItems.parent().removeClass("current").end().filter( '[href="#' + id + '"]' ).parent().addClass( "current" );
-   }                   
+   }
 });
+
+
+
+
+
+   function scrollFunction() {
+       if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+           document.getElementById("myBtn").style.display = "block";
+       } else {
+           document.getElementById("myBtn").style.display = "none";
+       }
+   }
+
+   function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+   }
