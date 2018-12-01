@@ -6,6 +6,10 @@
 hr{
 	border-color: #A381F3;
 }
+h1{
+	font-size: 2em;
+	margin-top: 1em;
+}
 .galleryLayout{
 	margin: 20px;
 	position: relative;
