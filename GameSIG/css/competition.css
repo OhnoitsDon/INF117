@@ -15,7 +15,6 @@ hr{
     flex-wrap: wrap;
 }
 
-
 /* All Images: Horizontal Centering */
 #judge1 center, #judge center, #sponsor center {
 	margin: auto;
@@ -62,9 +61,10 @@ hr{
   padding: 15px;
   border-radius: 4px;
 }
-#myBtn:hover{
+
+/* #myBtn:hover{
 	background-color:
-}
+} */
 
 /* Rows(grid-container) and Columns(grid-item) */
 .grid-container-25-75 {

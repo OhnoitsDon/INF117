@@ -56,8 +56,6 @@ input[type=submit]{
   color:black;
 }
 
-
-
 input[type=submit]:hover {background-color: #A381F3}
 
 input[type=submit]:focus { outline: none;
@@ -74,6 +72,7 @@ input[type=submit]:active {
   border-radius: 5px;
   padding: 0;
 }
+
 /*center image in ticket*/
 .centerImg{
   display:block;
