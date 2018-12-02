@@ -105,9 +105,11 @@ input[type=submit]:active {
 hr{
   border-color:  #A381F3;
 }
+
 h1 {
   font-size: 30px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .grid-container-auto-75-auto {
