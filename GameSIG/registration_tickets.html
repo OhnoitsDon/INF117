@@ -63,91 +63,89 @@
 <!--------Registration--------->
 <div class="content" style="background-color: white; color: black">
     <div class="container">
-      <div class="grid-container-100" id="registration">
-        <div class="grid-item"><h1>Registration Form</h1></div>
-      </div>
+      <div class="form_container id="registration">
+        <br>
+          <center>
+            <h1>Registration Form</h1>
+          </center>
+        <br>
+          <form action="/action_page.php">
 
-      <div class="grid-container-auto-75-auto">
-          <div class="grid-item">
-          </div>
-          <div class="grid-item">
-            <form action="/action_page.php">
+            <label for="date">Date</label>
+            <input type="date" name="date" name="date">
 
-              <label for="date">Date</label>
-              <input type="date" name="date" name="date">
+            <label for="game-name">Game Name</label>
+            <input type="text" id="first" name="first">
 
-              <label for="game-name">Game Name</label>
-              <input type="text" id="first" name="first">
+            <label for="team-name">Team Name</label>
+            <input type="text" id="last" name="last">
 
-              <label for="team-name">Team Name</label>
-              <input type="text" id="last" name="last">
+            <label for="one-sentence">One-Sentence Description</label>
+            <textarea id="one-sentence" name="one-sentence"></textarea>
+            <br>
+            
+            <label for="team_members">List of Team Members, Years and Their Schools
+            <br>(list: first name, last name, school, school year and email address)</label>
+            <textarea id="team-members" name="team-members"></textarea>
+            <br>
 
-              <label for="one-sentence">One-Sentence Description</label>
-              <textarea id="one-sentence" name="one-sentence"></textarea>
-              <br>
-              
-              <label for="team_members">List of Team Members, Years and Their Schools
-              <br>(list: first name, last name, school, school year and email address)</label>
-              <textarea id="team-members" name="team-members"></textarea>
-              <br>
+            <label>School Level: </label>
+            <br>
+            <input type="radio" name="school" value="college"><label class="school_level" for="college">College/University</label>
+            <br>
+            <input type="radio" name="school" value="high-school"><label class="school_level" for="high-school">High School</label>
+            <br>
+            <br>
+            <label for="message">Target Platform and Audience</label>
+            <textarea id="platform" name="platform" style="height:50px"></textarea>
 
-              <label>School Level: </label>
-              <br>
-              <input type="radio" name="school" value="college"><label class="school_level" for="college">College/University</label>
-              <br>
-              <input type="radio" name="school" value="high-school"><label class="school_level" for="high-school">High School</label>
-              <br>
-              <br>
-              <label for="message">Target Platform and Audience</label>
-              <textarea id="platform" name="platform" style="height:50px"></textarea>
+            <label for="message">One-Paragraph Summary of Gameplay and Objectives</label>
+            <textarea id="summary" name="summary" style="height:100px"></textarea>
 
-              <label for="message">One-Paragraph Summary of Gameplay and Objectives</label>
-              <textarea id="summary" name="summary" style="height:100px"></textarea>
-
-              <label for="key-features">Key Features</label>
-              <textarea id="features" name="features" style="height:100px"></textarea>
-              <br>
-              <label for="thumbnails">Thumbnails of Game Art</label>
-              <br>
-              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
-              <br>
-              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
-              <br>
-              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
-              <br>
-              <br>
-              <label for="third-party">Third-Party and Ready Made Asset Credits</label>
-              <textarea id="third-party" name="third-party"></textarea>
-              <br>
-              <label for="faculty">Faculty Member Name & Contact Information, if any <br>(list: first name, last name, school and email address)</label>
-              <textarea id="faculty" name="faculty"></textarea>
-              <br>
-              <label for="you-tube">YouTube Link</label>
-              <textarea id="you-tube" name="you-tube"></textarea>
-              <br>
-              <label for="notes">Miscellaneous Notes</label>
-              <textarea id="notes" name="notes" style="height:50px"></textarea>
-              <br>
-              <h2>When you send your submission, please answer the following:</h2>
-              <label for="q1">What were the top technical challenges that you encountered in the project?</label>
-              <textarea id="q1" name="q1" style="height:50px"></textarea>
-              <br>
-              <label for="q2">How did the design evolve during development? What changed, and what didn't?</label>
-              <textarea id="q2" name="q2" style="height:50px"></textarea>
-
-              
-
-              <center>
-                <input type="submit" value="SUBMIT">
-              </center>
-            </form>
-          </div>
+            <label for="key-features">Key Features</label>
+            <textarea id="features" name="features" style="height:100px"></textarea>
+            <br>
+            <label for="thumbnails">Thumbnails of Game Art</label>
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br>
+            <br>
+            <label for="third-party">Third-Party and Ready Made Asset Credits</label>
+            <textarea id="third-party" name="third-party"></textarea>
+  
+            <label for="faculty">Faculty Member Name & Contact Information, if any <br>(list: first name, last name, school and email address)</label>
+            <textarea id="faculty" name="faculty"></textarea>
+    
+            <label for="you-tube">YouTube Link</label>
+            <textarea id="you-tube" name="you-tube"></textarea>
+  
+            <label for="notes">Miscellaneous Notes</label>
+            <textarea id="notes" name="notes" style="height:50px"></textarea>
+        
+            <h2>When you send your submission, please answer the following:</h2>
+            <label for="q1">What were the top technical challenges that you encountered in the project?</label>
+            <textarea id="q1" name="q1" style="height:50px"></textarea>
+       
+            <label for="q2">How did the design evolve during development? What changed, and what didn't?</label>
+            <textarea id="q2" name="q2" style="height:50px"></textarea>
+            <br>
+            <br>
+            <br>
+            <center>
+              <input type="submit" value="SUBMIT">
+            </center>
+          </form>
         </div>
-        <br>
-        <br>
-        <hr>
-        <br>
       </div>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
   </div>
   
 <!--------- Tickets------------>

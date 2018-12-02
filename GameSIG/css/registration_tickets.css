@@ -9,6 +9,14 @@ label{
   float: left;
 }
 
+.form_container {
+  text-align: justify;
+  width: 52%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
 .school_level {
   float: none;
   padding: 5px;
