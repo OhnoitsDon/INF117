@@ -5,8 +5,19 @@
 label{
   color: #A381F3;
   font-weight: bold;
-  width: 150px; 
+  width: 150px;
   text-align: left;
+  font-weight: bold;
+  float: left;
+}
+.grid-container-auto-75-auto {
+  display: grid;
+  grid-template-columns: auto ;
+}
+.grid-item {
+  font-size: 12pt;
+  padding: 20px;
+  margin: auto;
 }
 
 h1{
@@ -16,6 +27,8 @@ h1{
 .title{
   margin: auto;
 }
+
+
 
  input[type=text], select, textarea {
   font-weight: bold;
@@ -52,7 +65,7 @@ input[type=submit]:active {
 
 .form-container {
   background: white;
-  padding: 0em 22em;
+
 }
 
 .form-container .row{
