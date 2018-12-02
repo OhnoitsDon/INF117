@@ -21,13 +21,9 @@
   color: black;
 }
 
-img{
-  max-height: 15px;
-}
-
 #subheader nav img {
   margin-right: 10px;
-  max-width: 25px;
+  max-height: 15px;
 }
 
 .sticky {
