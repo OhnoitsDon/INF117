@@ -52,7 +52,7 @@
         <center>
           <nav>
             <ul id="inner_subheader">
-              <li><a class="current" href="registration_tickets.html"><img src='./img/registration_tickets/form.png'>Registration Form</a></li>
+              <li><a class="current" href="#registration"><img src='./img/registration_tickets/form.png'>Registration Form</a></li>
               <li><a class='current' href='#tickets'><img src='./img/registration_tickets/tickets.png'>Tickets</a></li>
             </ul>
           </nav>
@@ -62,15 +62,16 @@
 
 <!--------Registration--------->
 <div class="content" style="background-color: white; color: black">
-  <br>
-    <div class="form-container">
-      <div class="row">
-        <div class="title"><h1>Registration</h1></div>
+    <div class="container">
+      <div class="grid-container-100" id="registration">
+        <div class="grid-item"><h1>Registration</h1></div>
       </div>
 
-        <div class="row">
-            <div class="col-md-1">
-              <form action="/action_page.php">
+      <div class="grid-container-auto-75-auto">
+          <div class="grid-item">
+          </div>
+          <div class="grid-item">
+            <form action="/action_page.php">
 
               <label for="date">Date</label>
               <input type="date" name="date" name="date">
@@ -85,11 +86,11 @@
               <textarea id="team-members" name="team-members"></textarea>
               <br>
 
-              <label for="school-level">School Level</label>
+              <label>School Level: </label>
               <br>
+              <input type="radio" name="school" value="college"><label class="school_level" for="college">College/University</label>
               <br>
-              <label for="college">College/University</label><input type="checkbox" name="school" value="college">
-              <label for="high-school">High School</label><input type="checkbox" name="school" value="high-school">
+              <input type="radio" name="school" value="high-school"><label class="school_level" for="high-school">High School</label>
               <br>
               <br>
               <label for="message">Target Platform and Audience</label>
@@ -101,33 +102,30 @@
               <label for="key-features">Key Features</label>
               <textarea id="features" name="features" style="height:100px"></textarea>
               <br>
-
               <label for="thumbnails">Thumbnails of Game Art</label>
-
-              <div class="box1"></div>
-              <div class="box2"></div>
-              <div class="box3"></div>
-              <div class="box4"></div>
-
-              <input type="submit" value="SUBMIT">
-              </form>
-            </div>
+              <br>
+              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+              <br>
+              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+              <br>
+              <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+              <br>
+              <br>
+              <center>
+                <input type="submit" value="SUBMIT">
+              </center>
+            </form>
           </div>
-    </div>
-  
-    <div style="color: #A381F3">
-    <center>
-    
-    </center>
-    </div>
-  <!--   <img src="./img/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" > -->
-    
-
-  <br><br><br>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+      </div>
   </div>
   
 <!--------- Tickets------------>
-<div class="content" style="background-color: white; color: black">
+<div id="tickets" class="content" style="background-color: white; color: black">
 <br>
   <center>
     <h1>Tickets</h1>
@@ -168,6 +166,8 @@
 
 <br><br><br>
 </div>
+
+<script src="./js/competition.js"></script>
 
     <footer>
       <p>Acme Web Deisgn, Copyright &copy; 2017</p>
