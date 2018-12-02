@@ -120,22 +120,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.grid-container-auto-75-auto {
-  display: grid;
-  grid-template-columns: auto 56% auto;
-}
-
-.grid-container-100 {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
-.grid-item {
-  font-size: 12pt;
-  padding: 20px;
-  margin: auto;
-}
-
 h2{
   font-size: 12pt;
   color: #A381F3;
