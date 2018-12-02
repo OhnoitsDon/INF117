@@ -24,7 +24,7 @@ label{
 
 .box1, .box2, .box3, .box4 {
   position: realtive;
-  display:inline-block; 
+  display:inline-block;
   border-style: solid;
   border-color:#A381F3;
   margin: 5px;
@@ -42,7 +42,7 @@ input[type=text], input[type=date], textarea {
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
-  width: 40em;
+  min-width: 90%;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -64,7 +64,7 @@ input[type=submit]:hover {
   color: black;
 }
 
-input[type=submit]:focus { 
+input[type=submit]:focus {
   outline: none;
 }
 
@@ -100,7 +100,7 @@ input[type=submit]:active {
   color: black;
 }
 
-.ticket_button:focus { 
+.ticket_button:focus {
   outline: none;
 }
 
