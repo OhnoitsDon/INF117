@@ -10,6 +10,10 @@ label{
 
 }
 
+h1{
+  font-size: 30px;
+}
+
 .title{
   margin: auto;
 }
@@ -49,10 +53,6 @@ input[type=submit]:active {
 
 .form-container {
   background: white;
-  /* border-radius: 5px; */
-  /* padding-left: 7em;
-  padding-right: 7em;
-  padding-bottom: 2em; */
   padding: 0em 22em;
 }
 
