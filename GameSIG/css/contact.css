@@ -10,14 +10,14 @@ label{
   font-weight: bold;
   float: left;
 }
-.grid-container-auto-75-auto {
-  display: grid;
-  grid-template-columns: auto ;
-}
-.grid-item {
-  font-size: 12pt;
-  padding: 20px;
-  margin: auto;
+
+.form_container {
+  background: white;
+  text-align: justify;
+  width: 45%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 h1{
@@ -28,8 +28,6 @@ h1{
   margin: auto;
 }
 
-
-
  input[type=text], select, textarea {
   font-weight: bold;
   width: 100%;
@@ -37,7 +35,7 @@ h1{
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
-  width: 50em;
+  width: 51em;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -61,13 +59,4 @@ input[type=submit]:focus { outline: none;
 input[type=submit]:active {
   color:#FFFFFF;
   transform: translateY(4px);
-}
-
-.form-container {
-  background: white;
-
-}
-
-.form-container .row{
-  text-align: left;
 }
