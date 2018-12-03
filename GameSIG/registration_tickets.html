@@ -27,7 +27,7 @@
         <a href=""><img src='./img/social_media/twitter_icon.png'></a>
         <a href=""><img src='./img/social_media/instagram_icon.png'></a>
       </div>
-      
+
       <div class="container">
         <center>
           <nav>
@@ -52,8 +52,8 @@
         <center>
           <nav>
             <ul id="inner_subheader">
-              <li><a class="current" href=""><img src='./img/registration_tickets/form.png'>Registration Form</a></li>
-              <li><a><img src='./img/registration_tickets/tickets.png'>Tickets</a></li>
+              <li><a class="current" href="#registration"><img src='./img/registration_tickets/form.png'>Registration Form</a></li>
+              <li><a class='current' href='#tickets'><img src='./img/registration_tickets/tickets.png'>Tickets</a></li>
             </ul>
           </nav>
         </center>
@@ -62,72 +62,93 @@
 
 <!--------Registration--------->
 <div class="content" style="background-color: white; color: black">
-  <br>
-    <div class="form-container">
-      <div class="row">
-        <div class="title"><h1>Registration</h1></div>
-      </div>
+    <div class="container">
+      <div class="form_container" id="registration">
+        <br>
+          <center>
+            <h1>Registration Form</h1>
+          </center>
+        <br>
+          <form action="/action_page.php">
 
-        <div class="row">
-            <div class="col-md-1">
-              <form action="/action_page.php">
+            <label for="date">Date</label>
+            <br>
+            <input type="date" name="date" name="date">
 
-              <label for="date">Date</label>
-              <input type="date" name="date" name="date">
+            <label for="game-name">Game Name</label>
+            <input type="text" id="first" name="first">
 
-              <label for="game-name">Game Name</label>
-              <input type="text" id="first" name="first">
+            <label for="team-name">Team Name</label>
+            <input type="text" id="last" name="last">
 
-              <label for="team-name">Team Name</label>
-              <input type="text" id="last" name="last">
-              
-              <label for="team_members">List of Team Members, Years and Their Schools</label>
-              <textarea id="team-members" name="team-members"></textarea>
-              <br>
+            <label for="one-sentence">One-Sentence Description</label>
+            <textarea id="one-sentence" name="one-sentence"></textarea>
+            <br>
 
-              <label for="school-level">School Level</label>
-              <br>
-              <br>
-              <label for="college">College/University</label><input type="checkbox" name="school" value="college">
-              <label for="high-school">High School</label><input type="checkbox" name="school" value="high-school">
-              <br>
-              <br>
-              <label for="message">Target Platform and Audience</label>
-              <textarea id="platform" name="platform" style="height:50px"></textarea>
+            <label for="team_members">List of Team Members, Years and Their Schools
+            <br>(list: first name, last name, school, school year and email address)</label>
+            <textarea id="team-members" name="team-members"></textarea>
+            <br>
 
-              <label for="message">One-Paragraph Summary of Gameplay and Objectives</label>
-              <textarea id="summary" name="summary" style="height:100px"></textarea>
+            <label>School Level: </label>
+            <br>
+            <input type="radio" name="school" value="college"><label class="school_level" for="college">College/University</label>
+            <br>
+            <input type="radio" name="school" value="high-school"><label class="school_level" for="high-school">High School</label>
+            <br><br>
 
-              <label for="key-features">Key Features</label>
-              <textarea id="features" name="features" style="height:100px"></textarea>
-              <br>
+            <label for="message">Target Platform and Audience</label>
+            <textarea id="platform" name="platform" style="height:50px"></textarea>
 
-              <label for="thumbnails">Thumbnails of Game Art</label>
+            <label for="message">One-Paragraph Summary of Gameplay and Objectives</label>
+            <textarea id="summary" name="summary" style="height:100px"></textarea>
 
-              <div class="box1"></div>
-              <div class="box2"></div>
-              <div class="box3"></div>
-              <div class="box4"></div>
+            <label for="key-features">Key Features</label>
+            <textarea id="features" name="features" style="height:100px"></textarea>
+            <br>
+            <label for="thumbnails">Thumbnails of Game Art</label>
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br>
+            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <br><br>
 
+            <label for="third-party">Third-Party and Ready Made Asset Credits</label>
+            <textarea id="third-party" name="third-party"></textarea>
+
+            <label for="faculty">Faculty Member Name & Contact Information, if any <br>(list: first name, last name, school and email address)</label>
+            <textarea id="faculty" name="faculty"></textarea>
+
+            <label for="you-tube">YouTube Link</label>
+            <textarea id="you-tube" name="you-tube"></textarea>
+
+            <label for="notes">Miscellaneous Notes</label>
+            <textarea id="notes" name="notes" style="height:50px"></textarea>
+
+            <h2>When you send your submission, please answer the following:</h2>
+            <label for="q1">What were the top technical challenges that you encountered in the project?</label>
+            <textarea id="q1" name="q1" style="height:50px"></textarea>
+
+            <label for="q2">How did the design evolve during development? What changed, and what didn't?</label>
+            <textarea id="q2" name="q2" style="height:50px"></textarea>
+            <br><br><br>
+
+            <center>
               <input type="submit" value="SUBMIT">
-              </form>
-            </div>
-          </div>
-    </div>
-  
-    <div style="color: #A381F3">
-    <center>
-    
-    </center>
-    </div>
-  <!--   <img src="./img/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" > -->
-    
+            </center>
 
-  <br><br><br>
+          </form>
+        </div>
+      </div>
+      <br><br><br>
+      <hr>
+      <br>
   </div>
-  
+
 <!--------- Tickets------------>
-<div class="content" style="background-color: white; color: black">
+<div id="tickets" class="content" style="background-color: white; color: black">
 <br>
   <center>
     <h1>Tickets</h1>
@@ -139,7 +160,7 @@
   </center>
   </div>
   <img src="./img/registration_tickets/winnerWallpaper.jpg" alt="Ticket picture" class="centerImg" >
-  
+
   <div>
     <center>
     <div style='float:left; width:50%'>
@@ -162,15 +183,17 @@
 
   <div>
     <center>
-       <button class="ticket_button"><h2>BUY</h2></button>
+       <button class="ticket_button">BUY</button>
     </center>
   </div>
 
 <br><br><br>
+  <footer>
+    <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+  </footer>
 </div>
 
-    <footer>
-      <p>Acme Web Deisgn, Copyright &copy; 2017</p>
-    </footer>
+<script src="./js/competition.js"></script>
+
   </body>
 </html>

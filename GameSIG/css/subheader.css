@@ -1,19 +1,22 @@
 /* Subheader */
 #subheader{
-  padding-top: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   overflow: hidden;
   color:#ffffff;
   background:#A381F3;
   z-index: 5;
+  min-height: 20px;
 }
 
 #subheader a {
-  padding: 20px;
+  padding-top: 15px, 15px;
   color:#000000;
 }
 
 #subheader nav {
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #subheader nav li:not(:last-child){
@@ -23,7 +26,7 @@
 
 #subheader nav img {
   margin-right: 10px;
-  max-width: 25px;
+  max-height: 15px;
 }
 
 .sticky {

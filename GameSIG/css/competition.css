@@ -3,6 +3,9 @@
 @import "subheader.css";
 @import "footer.css";
 
+h1{
+  margin-top: 0;
+}
 
 hr{
 	border-color: #A381F3;
@@ -15,12 +18,10 @@ hr{
     flex-wrap: wrap;
 }
 
-
 /* All Images: Horizontal Centering */
 #judge1 center, #judge center, #sponsor center {
 	margin: auto;
 }
-
 
 /* Rules and Regulation Images: Horizontal Centering and Resizing */
 #rules img {
@@ -28,17 +29,18 @@ hr{
 	max-width: 230px;
 	max-height: 230px;
 }
+
 #pdf img{
 	margin: auto;
 	max-width: 250px;
 	max-height: 250px;
 }
+
 #event img {
 	margin: auto;
 	max-width: 230px;
 	max-height: 230px;
 }
-
 
 /* Sponsors Images: Resizing */
 #sponsor img {
@@ -47,6 +49,7 @@ hr{
 	padding-right: 0;
 	max-width: 230px;
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -62,53 +65,29 @@ hr{
   padding: 15px;
   border-radius: 4px;
 }
-#myBtn:hover{
-	background-color:
-}
 
 /* Rows(grid-container) and Columns(grid-item) */
 .grid-container-25-75 {
   display: grid;
   grid-template-columns: 25% 75%;
 }
+
 .grid-container-75-25 {
   display: grid;
   grid-template-columns: 75% 25%;
 }
+
 .grid-container-80-20 {
   display: grid;
   grid-template-columns: 80% 20%;
 }
+
 .grid-container-100 {
   display: grid;
   grid-template-columns: 100%;
 }
+
 .grid-item {
   font-size: 30px;
   padding: 20px;
-}
-
-
-/* Media Queries */
-@media(max-width: 992px){
-	.grid-container-25-75 {
-	  display: block;
-	  grid-template-columns: 25% 75%;
-	}
-	.grid-container-75-25 {
-	  display: block;
-	  grid-template-columns: 75% 25%;
-	}
-	.grid-container-80-20 {
-	  display: block;
-	  grid-template-columns: 80% 20%;
-	}
-	.grid-container-100 {
-	  display: block;
-	  grid-template-columns: 100%;
-	}
-	.grid-item {
-	  font-size: 30px;
-	  padding: 20px;
-	}
 }
