@@ -6,14 +6,12 @@
 label{
   color: #A381F3;
   font-weight: bold;
-  float: left;
+  display: inline-block;
 }
 
 .form_container {
-  text-align: justify;
-  width: 52%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 50%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -37,12 +35,13 @@ input[type=radio] {
 }
 
 input[type=text], input[type=date], textarea {
+  display: block;
   font-size: 12pt;
   padding-left: 12px;
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
-  min-width: 90%;
+  min-width: 97%;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
