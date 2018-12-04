@@ -7,6 +7,11 @@ hr{
 	border-color: #A381F3;
 }
 
+iframe{
+	width:100%;
+	height:400px;
+}
+
 .galleryLayout{
 	margin: 20px;
 	position: relative;
@@ -50,3 +55,13 @@ hr{
     grid-column: 2;
     grid-row: 2;
   }
+		.galleryLayout,
+	   .c{
+	     grid-column: 1;
+	     grid-row: 2;
+	   }
+
+	   .d{
+	     grid-column: 2;
+	     grid-row: 2;
+	}
