@@ -12,6 +12,7 @@ hr{
 	border-color: #A381F3;
 }
 
+
 /* All Images: Vertical Centering */
 #rules, #pdf, #thumbnails, #judge, #sponsor {
 	display: flex;
@@ -20,9 +21,14 @@ hr{
 }
 
 /* All Images: Horizontal Centering */
-#judge1 center, #judge center, #sponsor center {
-	margin: auto;
+#judge center, #sponsor center {
+  margin: auto;
 }
+
+#judge img{
+  max-width: 230px;
+}
+
 
 /* Rules and Regulation Images: Horizontal Centering and Resizing */
 #rules img {
