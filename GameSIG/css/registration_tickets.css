@@ -90,10 +90,9 @@ input[type=submit]:active {
 }
 
 /*center image in ticket*/
-.centerImg {
-  display:block;
-  width: 40%;
-  height: 40%;
+.ticket_picture {
+  max-width: 120%;
+  max-height: 120%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -136,4 +135,22 @@ h1 {
 h2{
   font-size: 12pt;
   color: #A381F3;
+}
+.ticket_container {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white; 
+  color: black;
+  height: 760px;
+  margin-bottom: -1rem;
+}
+.grid_container {
+  margin: 0 auto;
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: 72% 25%;
+  padding: 10px;
+}
+.grid_item {
+  font-size: 30px;
 }
