@@ -11,18 +11,20 @@ var sticky = subheader.offsetTop;
 }
  //Cache selectors
 var lastId, topMenu = $("#inner_subheader"),
-  topMenuHeight = topMenu.outerHeight()+1
+  topMenuHeight = topMenu.outerHeight()
   // All list items
   menuItems = topMenu.find("a"),
   // Anchors corresponding to menu items
   scrollItems = menuItems.map(function(){
     var item = $($(this).attr("href"));
-    if (item.length) { return item; }
+    if (item.length) { 
+      return item; 
+    }
   });
  // Bind click handler to menu items and perform scroll animation
 menuItems.click(function(e){
   var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      offsetTop = href === "#" ? 0 : $(href).offset().top;
   $('html, body').stop().animate(
     {scrollTop: offsetTop}, 300);
   e.preventDefault();
