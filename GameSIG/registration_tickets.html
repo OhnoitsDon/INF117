@@ -71,24 +71,40 @@
             <h1>Registration Form</h1>
           </center>
         <br>
-          <form action="/action_page.php">
+          <form action="createmypdf.php" method="post">
 
             <label for="date">Date</label>
             <br>
-            <input type="date" name="date" name="date">
+            <input id="today" type="date" name="date" value="">
+
+            <script>
+              var today = new Date();
+              var dd = today.getDate();
+              var mm = today.getMonth()+1;
+              var yyyy = today.getFullYear();
+               if(dd<10){
+                      dd='0'+dd
+                  } 
+                  if(mm<10){
+                      mm='0'+mm
+                  } 
+
+              today = yyyy+'-'+mm+'-'+dd;
+              document.getElementById("today").setAttribute("value", today);              
+            </script>
 
             <label for="game-name">Game Name</label>
-            <input type="text" id="first" name="first">
+            <input type="text" id="game_name" name="game_name">
 
             <label for="team-name">Team Name</label>
-            <input type="text" id="last" name="last">
+            <input type="text" id="team_name" name="team_name">
 
             <label for="one-sentence">One-Sentence Description</label>
-            <textarea id="one-sentence" name="one-sentence"></textarea>
+            <textarea id="one_sentence" name="one_sentence"></textarea>
 
             <label for="team_members">List of Team Members, Years and Their Schools
             <br>(list: first name, last name, school, school year and email address)</label>
-            <textarea id="team-members" name="team-members"></textarea>
+            <textarea id="team_members" name="team_members"></textarea>
 
             <label>School Level: </label>
             <br>
@@ -108,25 +124,25 @@
             
             <label for="thumbnails">Thumbnails of Game Art</label>
             <br>
-            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <input type="file" name="sample1" accept="image/png, image/jpeg">
             <br>
-            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <input type="file" name="sample2" accept="image/png, image/jpeg">
             <br>
-            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <input type="file" name="sample3" accept="image/png, image/jpeg">
             <br>
-            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <input type="file" name="sample4" accept="image/png, image/jpeg">
             <br>
-            <input type="file" id="sample1" name="sample1" accept="image/png, image/jpeg">
+            <input type="file" name="sample5" accept="image/png, image/jpeg">
             <br><br>
 
-            <label for="third-party">Third-Party and Ready Made Asset Credits</label>
-            <textarea id="third-party" name="third-party"></textarea>
+            <label for="third_party">Third-Party and Ready Made Asset Credits</label>
+            <textarea id="third_party" name="third_party"></textarea>
 
             <label for="faculty">Faculty Member Name & Contact Information, if any <br>(list: first name, last name, school and email address)</label>
             <textarea id="faculty" name="faculty"></textarea>
 
-            <label for="you-tube">YouTube Link</label>
-            <textarea id="you-tube" name="you-tube"></textarea>
+            <label for="youtube">YouTube Link</label>
+            <textarea id="youtube" name="youtube"></textarea>
 
             <label for="notes">Miscellaneous Notes</label>
             <textarea id="notes" name="notes" style="height:50px"></textarea>
@@ -140,7 +156,7 @@
             <br>
 
             <center>
-              <input type="submit" value="SUBMIT">
+              <input type="submit" value="SUBMIT" name="submit">
             </center>
 
           </form>
