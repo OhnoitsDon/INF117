@@ -23,6 +23,7 @@ if (!empty($_POST['submit']))
 	$q2=$_POST['q2'];
 
 	require __DIR__ . "/fpdf/fpdf.php";
+
 	$pdf=new FPDF();
 	$pdf->AddPage();
 	$pdf->SetFont("Arial", "B", 16);
@@ -61,7 +62,7 @@ if (!empty($_POST['submit']))
 	$pdf->SetFont("", "B", "");
 	$pdf->Cell(0,10, "Thumbnails of Game Art", 1,1, L, true);
 	$pdf->SetFont("");
-	$pdf->MultiCell(0,7, $pdf->Image($sample1, 33.78), 1,1);
+	//$pdf->MultiCell(0,7, $pdf->Image($sample1, 33.78), 1,1);
 	//$pdf->Cell(0,10, "{$sample1}", 1,1, L, true);
 	$pdf->SetFont("", "B", "");
 	$pdf->Cell(0,10, "Third-Party and Ready-Made Assets Credits", 1,1, L, true);
@@ -79,7 +80,7 @@ if (!empty($_POST['submit']))
 	$pdf->Cell(0,10, "Miscellaneous Notes: ", 1,1, L, true);
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$notes}", 1,1);
-		$pdf->SetFont("", "B", "");
+	$pdf->SetFont("", "B", "");
 	$pdf->MultiCell(0,7, "What were the top technical challenges that you encountered in the project?", 1,1, L, true);
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$q1}", 1,1);
@@ -88,8 +89,62 @@ if (!empty($_POST['submit']))
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$q2}", 1,1);
 
+	$file = 'myRegistration.pdf';
 
-	$pdf->output();
+	$pdf->output("", $file);
+
+/* Email Detials */
+  $mail_to = "donct@uci.edu";
+  $from_mail = "donct@uci.edu";
+  $from_name = "Don Cuong Tran";
+  $reply_to = "donct@uci.edu";
+  $subject = "GameSIG Registration Form";
+  $message = "Here's my form.";
+ 
+/* Attachment File */
+  $file_size = filesize($file);
+  $handle = fopen($file, "r");
+  $content = fread($handle, $file_size);
+  fclose($handle);
+  $content = chunk_split(base64_encode($content));
+   
+/* Set the email header */
+  // Generate a boundary
+  $boundary = md5(uniqid(time()));
+   
+  // Email header
+  $header = "From: ".$from_name." <".$from_mail.">".PHP_EOL;
+  $header .= "Reply-To: ".$reply_to.PHP_EOL;
+  $header .= "MIME-Version: 1.0".PHP_EOL;
+   
+  // Multipart wraps the Email Content and Attachment
+  $header .= "Content-Type: multipart/mixed; boundary=\"".$boundary."\"".PHP_EOL;
+  $header .= "This is a multi-part message in MIME format.".PHP_EOL;
+  $header .= "--".$boundary.PHP_EOL;
+   
+  // Email content
+  // Content-type can be text/plain or text/html
+  $header .= "Content-type:text/plain; charset=iso-8859-1".PHP_EOL;
+  $header .= "Content-Transfer-Encoding: 7bit".PHP_EOL.PHP_EOL;
+  $header .= "$message".PHP_EOL;
+  $header .= "--".$boundary.PHP_EOL;
+   
+  // Attachment
+  // Edit content type for different file extensions
+  $header .= "Content-Type: application/xml; name=\"".$file_name."\"".PHP_EOL;
+  $header .= "Content-Transfer-Encoding: base64".PHP_EOL;
+  $header .= "Content-Disposition: attachment; filename=\"".$file_name."\"".PHP_EOL.PHP_EOL;
+  $header .= $content.PHP_EOL;
+  $header .= "--".$boundary."--";
+   
+  // Send email
+  if (mail($mail_to, $subject, "", $header)) {
+    echo "Sent";
+  } else {
+    echo "Error";
+  }
+
+
 }
 
 ?>
