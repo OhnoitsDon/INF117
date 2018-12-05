@@ -10,7 +10,7 @@ label{
 }
 
 .form_container {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -51,9 +51,8 @@ input[type=radio] {
 }
 
 input[type=text], input[type=date], textarea {
-  display: block;
   font-size: 12pt;
-  padding-left: 12px;
+  padding-left: 20px;
   border: 1px solid #A381F3;
   border-radius: 4px;
   height: 2em;
@@ -133,7 +132,7 @@ h1 {
 }
 
 h2{
-  font-size: 12pt;
+  font-size: 16pt;
   color: #A381F3;
 }
 .ticket_container {
@@ -153,4 +152,41 @@ h2{
 }
 .grid_item {
   font-size: 30px;
+}
+.multiple_field {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+.field_item_100
+{
+  display: block; 
+  margin-right: 35px;
+  min-width: 100%;
+}
+.field_item_70
+{
+  display: block; 
+  margin-right: 50px;
+  min-width: 70%;
+}
+.field_item_50
+{
+  display: block; 
+  margin-right: 35px;
+  min-width: 47%;
+}
+.field_item_35
+{
+  display: block; 
+  margin-right: 35px;
+  min-width: 34%;
+}
+.field_item_20
+{
+  display: block; 
+  margin-right: 50px;
+  min-width: 20%;
 }
