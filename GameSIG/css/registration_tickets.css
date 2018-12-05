@@ -148,7 +148,7 @@ h2{
   margin: 0 auto;
   max-width: 60%;
   display: grid;
-  grid-template-columns: 72% 25%;
+  grid-template-columns: 75% 25%;
   padding: 10px;
 }
 .grid_item {
