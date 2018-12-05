@@ -63,7 +63,7 @@
     </header>
 
 <!--------Registration--------->
-<div class="content" id="registration" style="background-color: white; color: black">
+<div class="content" id="registration" style="background-color: black; color: white">
     <div class="container">
       <div class="form_container">
         <br>
@@ -101,17 +101,17 @@
 
               <div class="field_item_35">
                 <label for="game-name">Game Name</label>
-                <input type="text" id="game_name" name="game_name">
+                <input type="text" id="game_name" name="game_name" placeholder="Name of your game">
               </div>
               <div  class="field_item_35">
                 <label for="team-name">Team Name</label>
-                <input type="text" id="team_name" name="team_name">
+                <input type="text" id="team_name" name="team_name" placeholder="Name of your team">
               </div>
             </div>
 
             <div class="field_item_100">
               <label for="one-sentence">One-Sentence Description</label>
-              <textarea id="one_sentence" name="one_sentence"></textarea>
+              <textarea id="one_sentence" name="one_sentence" placeholder="Give us a short, clear description of the game: genre, theme, and primary goal."></textarea>
             </div>
 
             <center>
@@ -119,13 +119,13 @@
             </center>        
             <div class="multiple_field">
               <div class="field_item_100">
-                <label for="team_members">List of Team Members Names, Their Years, Their Schools, and Their Majors</label>
-                <textarea id="team_members" name="team_members" placeholder="e.g.: -Edward, Fu, 5th, UCI, Informatics" style="height: 5em;"></textarea>
+                <label for="team_members">List of Team Members Names, Their Years, Their Schools, & Their Majors</label>
+                <textarea id="team_members" name="team_members" placeholder="e.g.: -Edward Fu, 5th, UCI, Informatics" style="height: 5em;"></textarea>
               </div>
             </div>
 
-            <label for="faculty">Faculty Member Name & Contact Information, if any <br>(list: first name, last name, school and email address)</label>
-            <textarea id="faculty" name="faculty"  style="height: 5em;"></textarea>
+            <label for="faculty">Faculty Member Name, School, & Contact Information, if any</label>
+            <textarea id="faculty" name="faculty" placeholder="e.g.: -Darren Denenberg, UCI, ddenenbe@uci.edu"  style="height: 5em;"></textarea>
 
             <br>
             <center>
@@ -133,26 +133,26 @@
             </center>
             <div class="multiple_field">
               <div class="field_item_50">
-                <label for="platform">Target Platform and Audience</label>
-                <textarea id="platform" name="platform" style="height:100px"></textarea>
+                <label for="platform">Game Engine</label>
+                <textarea id="platform" name="platform" style="height:100px" placeholder="Which game engine did you use to create your game?"></textarea>
               </div>
               
               <div class="field_item_50">
                 <label for="features">Key Features</label>
-                <textarea id="features" name="features" style="height:100px"></textarea>
+                <textarea id="features" name="features" style="height:100px" placeholder="Write down a quick series of bullet points - the summary of elements you want to put on a website"></textarea>
               </div>
             </div>
 
             <div class="field_item_100">
               <label for="message">One-Paragraph Summary of Gameplay and Objectives</label>
-              <textarea id="summary" name="summary" style="height:100px"></textarea>
+              <textarea id="summary" name="summary" style="height:100px" placeholder="What role does the player take on? What does this player do in the game? Are there levels? A boss to defeat?"></textarea>
             </div>
               
               <label for="message">YouTube Link</label>
-              <textarea id="youtube" name="youtube"></textarea>
+              <textarea id="youtube" name="youtube" placeholder="http://"></textarea>
 
               <label for="third_party">Third-Party and Ready Made Asset Credits</label>
-              <textarea id="third_party" name="third_party"></textarea>
+              <textarea id="third_party" name="third_party" placeholder="Is any non-original art content included in your game?"></textarea>
 
               <label for="thumbnails">Thumbnails of Game Art</label>
               <br>
@@ -185,9 +185,14 @@
             </center>
             <br><br><br>
           </form>
-          <hr>
         </div>
       </div>
+  </div>
+
+  <div style="background-image: linear-gradient(black, white)">
+    <div class="grid-container-100" style="height: 120px">
+      <div class="grid-item"></div>
+    </div>
   </div>
 <!--------- Tickets------------>
 <div id="tickets">

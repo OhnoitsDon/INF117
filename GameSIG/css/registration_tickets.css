@@ -4,7 +4,7 @@
 @import "footer.css";
 
 label{
-  color: #A381F3;
+  color: white;
   font-weight: bold;
   display: inline-block;
 }
@@ -132,7 +132,7 @@ h1 {
 }
 
 h2{
-  font-size: 16pt;
+  font-size: 18pt;
   color: #A381F3;
 }
 .ticket_container {
