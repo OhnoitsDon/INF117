@@ -58,8 +58,8 @@ iframe{
 
 	/* 768 */
 	@media (max-width: 700px) {
+		.content_box,
 		.galleryLayout,
-		.box,
 		.a,
 		iframe,
 		.b,
@@ -75,19 +75,21 @@ iframe{
 		.galleryLayout{
 			display: block;
 	  	align-items: center;
-			margin-left: -45%;
+			margin-left: -47%;
 			padding-left: 0%;
 	  	justify-content: center;
 			background-color:#fff;
 			color:#444;
 		  }
-
-		  .box{
+			.content_box{
 		    background-color: #444;
 		    color: #fff;
-				font-size: 100%;
-
+		    border-radius: 5px;
+		    padding: 10px;
+		    font-size: 100%;
 		  }
+
+
 
 		  .a{
 
@@ -110,7 +112,7 @@ iframe{
 	/* 768-1024 */
 	@media (min-width: 700px) and (max-width:1240px) {
 		.galleryLayout,
- 	 .box,
+
  	 .a,
  	 iframe,
  	 .b,
@@ -118,7 +120,7 @@ iframe{
  	 .d
 
  	 iframe{
- 		 width:95%;
+ 		 width:98%;
  		 height:window.innerHeight;
  	 }
 
@@ -137,13 +139,7 @@ iframe{
 	 	color:#444;
 	   }
 
-	   .box{
-	     background-color: #444;
-	     color: #fff;
-	     border-radius: 5px;
-	     padding: 5px;
-	     font-size: 100%;
-	   }
+
 
 	   .a{
 	     grid-column: 1/3;
