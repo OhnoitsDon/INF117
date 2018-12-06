@@ -18,9 +18,9 @@ if (!empty($_POST['submit']))
 	$third_party=$_POST['third_party'];
 	$faculty=$_POST['faculty'];
 	$youtube=$_POST['youtube'];
-	$notes=$_POST['notes'];
 	$q1=$_POST['q1'];
 	$q2=$_POST['q2'];
+	$q3=$_POST['q3'];
 
 	require __DIR__ . "/fpdf/fpdf.php";
 
@@ -52,34 +52,34 @@ if (!empty($_POST['submit']))
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$team_members}", 1,1);
 	$pdf->SetFont("", "B", "");
-	$pdf->Cell(0,10, "One-paragraph Summary of Gameplay and Objectives", 1,1, L, true);
+	$pdf->MultiCell(0,7, "Faculty Member Name & Contact Information, if any", 1,1, L, true);
+	$pdf->MultiCell(0,7, "{$faculty}", 1,1);
 	$pdf->SetFont("");
-	$pdf->MultiCell(0,7, "{$summary}", 1,1);
+	$pdf->SetFont("", "B", "");
+	$pdf->Cell(0,10, "Game Engine", 1,1, L, true);
+	$pdf->SetFont("");
+	$pdf->MultiCell(0,7, "{$platform}", 1,1);
 	$pdf->SetFont("", "B", "");
 	$pdf->Cell(0,10, "Key Features", 1,1, L, true);
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$features}", 1,1);
 	$pdf->SetFont("", "B", "");
-	$pdf->Cell(0,10, "Thumbnails of Game Art", 1,1, L, true);
+	$pdf->Cell(0,10, "One-paragraph Summary of Gameplay and Objectives", 1,1, L, true);
 	$pdf->SetFont("");
-	//$pdf->MultiCell(0,7, $pdf->Image($sample1, 33.78), 1,1);
-	//$pdf->Cell(0,10, "{$sample1}", 1,1, L, true);
-	$pdf->SetFont("", "B", "");
-	$pdf->Cell(0,10, "Third-Party and Ready-Made Assets Credits", 1,1, L, true);
-	$pdf->SetFont("");
-	$pdf->MultiCell(0,7, "{$third_party}", 1,1);
-	$pdf->SetFont("", "B", "");
-	$pdf->MultiCell(0,7, "Faculty Member Name & Contact Information, if any (list: first name, last name, school and email address)", 1,1, L, true);
-	$pdf->SetFont("");
-	$pdf->MultiCell(0,7, "{$faculty}", 1,1);
+	$pdf->MultiCell(0,7, "{$summary}", 1,1);
 	$pdf->SetFont("", "B", "");
 	$pdf->Cell(0,10, "YouTube Link: ", 1,1, L, true);
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$youtube}", 1,1);
 	$pdf->SetFont("", "B", "");
-	$pdf->Cell(0,10, "Miscellaneous Notes: ", 1,1, L, true);
+	$pdf->Cell(0,10, "Third-Party and Ready-Made Assets Credits", 1,1, L, true);
 	$pdf->SetFont("");
-	$pdf->MultiCell(0,7, "{$notes}", 1,1);
+	$pdf->MultiCell(0,7, "{$third_party}", 1,1);
+	$pdf->SetFont("", "B", "");
+	$pdf->Cell(0,10, "Thumbnails of Game Art", 1,1, L, true);
+	$pdf->SetFont("");
+	//$pdf->MultiCell(0,7, $pdf->Image($sample1, 33.78), 1,1);
+	//$pdf->Cell(0,10, "{$sample1}", 1,1, L, true);
 	$pdf->SetFont("", "B", "");
 	$pdf->MultiCell(0,7, "What were the top technical challenges that you encountered in the project?", 1,1, L, true);
 	$pdf->SetFont("");
@@ -88,6 +88,10 @@ if (!empty($_POST['submit']))
 	$pdf->MultiCell(0,7, "How did the design evolve during development? What changed, and what didn’t?", 1,1, L, true);
 	$pdf->SetFont("");
 	$pdf->MultiCell(0,7, "{$q2}", 1,1);
+	$pdf->SetFont("", "B", "");
+	$pdf->MultiCell(0,7, "Is there anything else about the game that you need to mention?", 1,1, L, true);
+	$pdf->SetFont("");
+	$pdf->MultiCell(0,7, "{$q3}", 1,1);
 
 	$file = 'myRegistration.pdf';
 
