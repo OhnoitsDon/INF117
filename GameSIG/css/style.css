@@ -33,8 +33,8 @@ p, ul {
 }
 
 .social_media{
-  float: right;
-  margin-right: 50px;
+  float: left;
+  margin-left: 50px;
   margin-top: -70px;
 }
 
@@ -70,26 +70,17 @@ p, ul {
 /* Media Queries */
 @media(max-width: 768px){
   .social_media,
-  header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article#main-col,
-  aside#sidebar{
+  #boxes .box {
     float:none;
     text-align:center;
     width:100%;
+    display: inline-block;
   }
 
   header{
     padding-bottom:20px;
-  }
-
-  .social_media{
-    display: inline-block;
-    margin-top: 20px;
   }
 
   #showcase h1{
@@ -116,10 +107,14 @@ p, ul {
 }
 
 /* 992px */
-@media (min-width: 992px) {
+@media (max-width: 1000px) {
 }
 
 /* 1200 px */
-@media (min-width: 1200px) {
+@media (max-width: 1250px) {
+  header nav,
+  header nav li {
+    display: none;
+  }
 
 }
