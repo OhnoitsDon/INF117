@@ -70,7 +70,7 @@ p, ul {
 /* Media Queries */
 @media(max-width: 700px){
   #subheader nav li {
-    display: block;
+    display: inline-block;
   }
 }
 
