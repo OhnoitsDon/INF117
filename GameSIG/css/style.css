@@ -7,6 +7,13 @@ body{
   overflow-x: hidden;
 }
 
+#logo {
+  padding-top: 15px;
+  padding-bottom: 35px;
+  min-height: 22%;
+  min-width:22%;
+}
+
 .clickable {
   color: blue;
   text-decoration: underline;
@@ -45,7 +52,7 @@ p, ul {
 .social_media{
   float: left;
   margin-left: 50px;
-  margin-top: -70px;
+  margin-top: -150px;
 }
 
 .social_media img{
@@ -75,8 +82,8 @@ p, ul {
 }
 
 #boxes .box img{
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 
 /* Media Queries */
