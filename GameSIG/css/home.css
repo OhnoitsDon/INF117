@@ -77,11 +77,8 @@
   }
 }
 
-
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   #showcase {
-    height:925px;
-    background-size: cover;
-    text-align: auto;
+    padding: 100px;
   }
 }
