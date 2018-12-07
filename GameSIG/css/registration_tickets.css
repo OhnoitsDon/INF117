@@ -138,7 +138,7 @@ h2{
 .ticket_container {
   margin-right: auto;
   margin-left: auto;
-  background-color: white; 
+  background-color: white;
   color: black;
   height: 760px;
   margin-bottom: -1rem;
@@ -158,35 +158,75 @@ h2{
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 .field_item_100
 {
-  display: block; 
+  display: block;
   margin-right: 35px;
   min-width: 100%;
 }
 .field_item_70
 {
-  display: block; 
+  display: block;
   margin-right: 50px;
   min-width: 70%;
 }
 .field_item_50
 {
-  display: block; 
+  display: block;
   margin-right: 35px;
   min-width: 47%;
 }
 .field_item_35
 {
-  display: block; 
+  display: block;
   margin-right: 35px;
   min-width: 34%;
 }
 .field_item_20
 {
-  display: block; 
+  display: block;
   margin-right: 50px;
   min-width: 20%;
+}
+
+/*700 */
+@media (max-width: 700px) {
+  .form_container, .multiple_field,
+  .form_container {
+    min-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .multiple_field {
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+}
+/* 1100-this width is weird when trying to register?? */
+@media (max-width: 1100px) {
+  .form_container,.ticket_container,.grid_container,.grid_item,
+  .form_container {
+    min-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .grid_container {
+
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
+
+  }
+  .grid_item {
+    font-size: 30px;
+
+  }
 }
