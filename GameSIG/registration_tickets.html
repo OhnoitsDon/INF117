@@ -141,12 +141,12 @@
             </center>
             <div class="multiple_field">
               <div class="field_item_100">
-                <label for="team_members"><font color="red">*</font>List of Team Members Names, Their Years, Their Schools, & Their Majors</label>
+                <label for="team_members"><font color="red">*</font>List of Team Member Names, Graduation Years, Schools, and Majors</label>
                 <textarea id="team_members" name="team_members" placeholder="e.g. Ed Edwards, 5th, UCI, Informatics" style="height: 5em;"></textarea>
               </div>
             </div>
 
-            <label for="faculty"><font color="red">*</font>Faculty Member Name, School, & Contact Information, if any</label>
+            <label for="faculty"><font color="red">*</font>Faculty Member Name(s), School(s), and Contact Information, if any</label>
             <textarea id="faculty" name="faculty" placeholder="e.g. Mike Michaelson, UCI, mmichaelson@uci.edu"  style="height: 5em;"></textarea>
 
             <br>
@@ -218,6 +218,7 @@
       <div class="grid-item"></div>
     </div>
   </div>
+
 <!--------- Tickets------------>
 <div id="tickets">
   <div class="ticket_container">
@@ -228,58 +229,48 @@
     </center>
     <br>
 
-    <div id="tickets_showcase"><div>
-      
+    <div id="tickets_showcase"></div>
+
     <div id="ticket_text">
       <h1>Seventh Annual IEEE GameSIG Intercollegiate<br>Video Game Showcase</h1>
-      <p>September 24, 2019</p>
+      <div class="grid_container">
+          <p>DATE AND TIME<br>
+             Sat, September 24, 2019<br>
+             12:00 PM – 6:00 PM PDT
+           </p>
+          <p>LOCATION<br>
+            Sandhu Conference Center<br>
+            Chapman University<br>
+            571 N Grand St<br>
+            Orange, CA 92867
+          </p>
+      </div>
       <br>
-      <a href="https://www.eventbrite.com/e/the-2018-international-games-sig-classic-games-competition-tickets-49186948487"><button class="ticket_button" onclick="window.location='registration_tickets.html'"><h2 style="color: white">Go to Eventbrite</h2></button></a>
-    </div>
-
-    <div class="grid_container">
-      <div class="grid_item">
-        <p>DATE AND TIME<br>
-           Sat, May 5, 2019<br>
-           12:00 PM – 6:00 PM PDT
-         </p>
-      </div>
-
-      <div class="grid_item">
-        <p>LOCATION<br>
-          Sandhu Conference Center<br>
-          Chapman University<br>
-          571 N Grand St<br>
-          Orange, CA 92867
-        </p>
-        <p>
-          $0 - $25
-        </p>
-      </div>
+      <a href="https://www.eventbrite.com/e/the-2018-international-games-sig-classic-games-competition-tickets-49186948487"><button class="ticket_button" onclick="window.location='registration_tickets.html'"><h2 style="color: white">Buy Ticket</h2></button></a>
     </div>
   </div>
 </div>
 
-  <footer>
-    <section id="boxes">
-      <h2 style="color: white">Sponsors</h2>
-      <div class="box">
-        <img src='./img/epic-games-logo-A9D86272DC-seeklogo.com.png'>
-      </div>
-      <div class="box">
-        <img src='./img/Rockstar_Games-logo-788C233C6F-seeklogo.com.png'>
-      </div>
-      <div class="box">
-        <img src='./img/twitch-tv-logo-51C922E0F0-seeklogo.com.png'>
-      </div>
-      <div class="box">
-        <img src='./img/steam-logo-73274B19E3-seeklogo.com.png'>
-      </div>
-    </section>
-    <br>
-    <br>
-    <p class='copyright'>IEEE Copyright &copy; 2018</p>
-  </footer>
+<footer>
+  <section id="boxes">
+    <h2 style="color: white">Sponsors</h2>
+    <div class="box">
+      <img src='./img/epic-games-logo-A9D86272DC-seeklogo.com.png'>
+    </div>
+    <div class="box">
+      <img src='./img/Rockstar_Games-logo-788C233C6F-seeklogo.com.png'>
+    </div>
+    <div class="box">
+      <img src='./img/twitch-tv-logo-51C922E0F0-seeklogo.com.png'>
+    </div>
+    <div class="box">
+      <img src='./img/steam-logo-73274B19E3-seeklogo.com.png'>
+    </div>
+  </section>
+  <br>
+  <br>
+  <p class='copyright'>IEEE Copyright &copy; 2018</p>
+</footer>
 
 
 <script src="./js/registration.js"></script>

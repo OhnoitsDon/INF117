@@ -3,35 +3,19 @@
 @import "subheader.css";
 @import "footer.css";
 
-#tickets_showcase {
-  margin: 0 auto;
-  padding: 50px;
-  max-height: 600px;
-  max-width: 800px;
-  background: url('../img/registration_tickets/winnerWallpaper.jpg') top ;
-  box-shadow: 0 0 5px 5px black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:#ffffff;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+hr{
+  border-color:  #A381F3;
 }
 
-#ticket_text{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+h1 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 18pt;
+  color: #A381F3;
 }
 
 label{
@@ -77,6 +61,46 @@ label{
   width: 150px;
 }
 
+
+/* Registration Inputs */
+.multiple_field {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.field_item_100
+{
+  display: block;
+  margin-right: 35px;
+  min-width: 100%;
+}
+.field_item_70
+{
+  display: block;
+  margin-right: 50px;
+  min-width: 70%;
+}
+.field_item_50
+{
+  display: block;
+  margin-right: 35px;
+  min-width: 47%;
+}
+.field_item_35
+{
+  display: block;
+  margin-right: 35px;
+  min-width: 34%;
+}
+.field_item_20
+{
+  display: block;
+  margin-right: 50px;
+  min-width: 20%;
+}
+
 input[type=radio] {
   margin: .4rem;
 }
@@ -119,7 +143,8 @@ input[type=submit]:active {
   transform: translateY(4px);
 }
 
-/*center image in ticket*/
+
+/* Tickets */
 .ticket_picture {
   max-width: 120%;
   max-height: 120%;
@@ -131,6 +156,7 @@ input[type=submit]:active {
   background:#A381F3;
   border-radius:8px;
   font-size: 9pt;
+  min-width: 200px;
   color: white;
 }
 
@@ -147,75 +173,46 @@ input[type=submit]:active {
   color:black;
   transform: translateY(4px);
 }
-
-hr{
-  border-color:  #A381F3;
-}
-
-h1 {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h2{
-  font-size: 18pt;
-  color: #A381F3;
-}
 .ticket_container {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
   color: black;
-  height: 760px;
-  margin-bottom: -1rem;
+  height: 800px;
 }
 .grid_container {
   margin: 0 auto;
-  max-width: 30%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
 }
-.grid_item {
-  font-size: 30px;
+#tickets_showcase {
+  margin: 0 auto;
+  padding: 300px;
+  max-height: 900px;
+  max-width: 600px;
+  background: url('../img/registration_tickets/winnerWallpaper.jpg') top ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#ffffff;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
-.multiple_field {
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.field_item_100
-{
-  display: block;
-  margin-right: 35px;
-  min-width: 100%;
-}
-.field_item_70
-{
-  display: block;
-  margin-right: 50px;
-  min-width: 70%;
-}
-.field_item_50
-{
-  display: block;
-  margin-right: 35px;
-  min-width: 47%;
-}
-.field_item_35
-{
-  display: block;
-  margin-right: 35px;
-  min-width: 34%;
-}
-.field_item_20
-{
-  display: block;
-  margin-right: 50px;
-  min-width: 20%;
+#ticket_text{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  bottom: 65%;
+  margin: 0 auto;
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
 }
 
 /*700 */
@@ -233,7 +230,18 @@ h2{
     flex-direction: column;
     justify-content: flex-start;
   }
+  .grid_container {
+    display: block;
+  }
+  #ticket_text {
+    width: 80%;
+    bottom: 600px;
+  } 
 
+  #tickets_showcase {
+    min-height: 50px;
+    background-size: cen;
+  }
 
 }
 /* 1100-this width is weird when trying to register?? */
@@ -244,16 +252,5 @@ h2{
     margin: 0 auto;
     overflow: hidden;
   }
-  .grid_container {
-
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 10px;
-
-  }
-  .grid_item {
-    font-size: 30px;
-
-  }
 }
+
