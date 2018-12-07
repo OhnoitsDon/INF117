@@ -46,3 +46,16 @@
   font-size:30px;
   font-weight: bold;
 }
+
+.transport_button{
+  border: none;
+  background-color: black;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.transport_button:hover {
+  font-weight: bold;
+  color: #A381F3;
+}
