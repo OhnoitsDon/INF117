@@ -59,3 +59,11 @@
   font-weight: bold;
   color: #A381F3;
 }
+
+@media (min-width: 1250px) {
+  #showcase {
+    height:925px;
+    background-size: cover;
+    text-align:center;
+  }
+}
