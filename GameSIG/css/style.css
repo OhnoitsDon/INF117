@@ -77,7 +77,7 @@ p, ul {
   text-align:center;
   vertical-align: center;
   width:20%;
-  padding:10px;
+  padding-bottom: 0;
 }
 
 #boxes .box img{
