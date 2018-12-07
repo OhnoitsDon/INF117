@@ -59,12 +59,14 @@ p, ul {
 #boxes .box{
   display: inline-block;
   text-align:center;
+  vertical-align: center;
   width:20%;
   padding:10px;
 }
 
 #boxes .box img{
-  width:90px;
+  width: 50%;
+  height: 50%;
 }
 
 /* Media Queries */
