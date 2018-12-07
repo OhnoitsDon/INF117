@@ -12,7 +12,6 @@ hr{
 	border-color: #A381F3;
 }
 
-
 /* All Images: Vertical Centering */
 #rules, #pdf, #thumbnails, #judge, #sponsor {
 	display: flex;

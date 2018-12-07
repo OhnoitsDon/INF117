@@ -7,6 +7,10 @@ body{
   overflow-x: hidden;
 }
 
+.clickable {
+  color: blue;
+}
+
 p, ul {
   font-size: 12pt;
 }
@@ -53,7 +57,7 @@ p, ul {
 /* Boxes */
 #boxes{
   color: white;
-  margin-top:20px;
+  padding: 20px;
 }
 
 #boxes .box{
