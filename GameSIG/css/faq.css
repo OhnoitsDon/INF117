@@ -2,7 +2,7 @@
 @import "header.css";
 @import "footer.css";
 
-h2{
+#first_item, #second_item, #third_item, #fourth_item {
   color: #A381F3;
   text-align: left;
   margin-bottom: 0em;
@@ -11,7 +11,6 @@ h2{
 
 p{
   text-align: left;
-  margin-top: 0em;
   text-indent: 2em;
 }
 
